@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 Building mini frontend projects and improving my UI design skills<br><br>🤝Frontend web development projects and beginner-friendly open source<br><br>🧠JavaScript problem solving and building responsive layouts<br><br>🌱React.js, Git & GitHub, and modern UI/UX design in Figma<br><br>💬HTML, CSS, JavaScript basics, and how to start in web development<br><br>⚡I turned my curiosity for coding into a daily habit 
+🔭 Building mini frontend projects and improving my UI design skills<br><br>🤝Frontend web development projects and beginner-friendly open source<br><br>🧠JavaScript problem solving and building responsive layouts<br><br>🌱React.js, Git & GitHub, and modern UI/UX design in Figma<br><br>💬HTML, CSS, JavaScript basics, and how to start in web development<br>⚡I turned my curiosity for coding into a daily habit 
 
 
 ## 🌐 Socials:
