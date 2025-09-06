@@ -1,6 +1,6 @@
-<h1>Hi 👋, I'm Chethan Gowda S.N</h1>h1
+<h1>Hi 👋, I'm Chethan Gowda S.N</h1>
 
-🔭 Building mini frontend projects and improving my UI design skills<br>🤝Frontend web development projects and beginner-friendly open source<br>🧠JavaScript problem solving and building responsive layouts<br>🌱React.js, Git & GitHub, and modern UI/UX design in Figma<br>💬HTML, CSS, JavaScript basics, and how to start in web development<br>⚡I turned my curiosity for coding into a daily habit 
+🔭 Building web projects and improving my UI design skills<br>🤝web development projects and beginner-friendly open source<br>🧠JavaScript problem solving and building responsive layouts<br>🌱React.js, Git & GitHub, and modern UI/UX design in Figma<br>💬<br>⚡I turned my curiosity for coding into a daily habit 
 
 
 ## 🌐 Socials:
