@@ -1,9 +1,13 @@
 <h1>Hi 👋, I'm Chethan Gowda S.N</h1>
 
 🔭 I’m passionate about building impactful web projects and continuously enhancing my UI/UX design skills.
+
 🤝 I love collaborating on web development and beginner-friendly open-source projects that create real-world value.
+
 🧠 Currently focused on JavaScript problem-solving and designing responsive, user-friendly layouts.
+
 🌱 I’m learning React.js, Git & GitHub, and modern UI/UX design in Figma to strengthen my full-stack journey.
+
 ⚡ I’ve turned my curiosity for coding into a daily habit, always eager to explore and innovate
 
 
