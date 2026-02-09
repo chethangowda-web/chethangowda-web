@@ -1,5 +1,5 @@
 # 💫 About Me:
-### Hi👋 Iam Chethan Gowda <br><br>🎓 B.Tech CSE Student | 💻 Full Stack Java Aspirant  <br>🚀 Passionate about Web Development & Problem Solving  <br><br>- 🔭 Currently working on Java & Web projects  <br>- 🌱 Learning Spring Boot and Backend Development  <br>- 🎯 Aim: Crack my first tech internship  <br>- 🏓 State-level Table Tennis player | 🥋 Karate Brown Belt  <br><br>📌 Let's connect and build something awesome!<br>
+### Hi👋 Iam Chethan Gowda <br><br>🎓 B.Tech CSE Student | 💻 Full Stack Java Aspirant  <br>🚀 Passionate about Web Development & Problem Solving <br>- 🔭 Currently working on Java & Web projects  <br>- 🌱 Learning Spring Boot and Backend Development  <br>- 🎯 Aim: Crack my first tech internship  <br>- 🏓 State-level Table Tennis player | 🥋 Karate Brown Belt  <br><br>📌 Let's connect and build something awesome!<br>
 
 
 ## 🌐 Socials:
