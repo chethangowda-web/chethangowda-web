@@ -1,4 +1,4 @@
-<h1 align="left">Hi 👋, I'm Chethan Gowda</h1>
+<h1 align="left">Hi 👋, I'm Chethan Gowda!</h1>
 <h3 align="left">B.Tech CSE Student | Full Stack Java Aspirant | Tech Explorer</h3>
 
 <p align="left">
