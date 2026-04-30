@@ -51,20 +51,24 @@ const chethan = {
 <div align="center">
 
 ### Languages
-<img src="https://skillicons.dev/icons?i=java,js,python,c&theme=dark&perline=8" />
+<img src="https://skillicons.dev/icons?i=java,js,ts,python,c&theme=dark&perline=8" />
 
 ### Frontend
-<img src="https://skillicons.dev/icons?i=html,css,tailwind,sass&theme=dark&perline=8" />
+<img src="https://skillicons.dev/icons?i=react,html,css,tailwind,sass&theme=dark&perline=8" />
 
 ### Backend & Database
 <img src="https://skillicons.dev/icons?i=spring,mysql&theme=dark&perline=8" />
+
+### Web3 & Blockchain
+<img src="https://skillicons.dev/icons?i=ethereum&theme=dark&perline=8" />
+<br/>
+<img src="https://img.shields.io/badge/Web3-7c3aed?style=for-the-badge&logo=web3.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Blockchain-9333ea?style=for-the-badge&logo=bitcoin&logoColor=white"/>
 
 ### Tools & Platforms
 <img src="https://skillicons.dev/icons?i=git,github,vscode,idea,arduino,canva&theme=dark&perline=8" />
 
 </div>
-
----
 
 ## 📊 GitHub Analytics
 
