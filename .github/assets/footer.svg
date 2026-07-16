@@ -1,0 +1,26 @@
+<svg viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="ftBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#131a2b"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="90" rx="18" fill="url(#ftBg)"/>
+  <rect x="1.5" y="1.5" width="897" height="87" rx="18" fill="none" stroke="url(#ftGrad)" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- scanline -->
+  <rect x="0" y="0" width="900" height="2" fill="#22d3ee" opacity="0.5">
+    <animate attributeName="y" values="0;88;0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="450" y="40" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#8b9dc3">
+    CHETHAN GOWDA · Developer · Builder · Learner
+  </text>
+  <text x="450" y="62" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" fill="#5b6b8c">
+    Open for internships and collaboration · MERN · AI Agents
+  </text>
+</svg>

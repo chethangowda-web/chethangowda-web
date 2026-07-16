@@ -1,0 +1,55 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#131a2b"/>
+    </linearGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="24"/></filter>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="260" rx="18" fill="url(#bgGrad)"/>
+  <rect x="1.5" y="1.5" width="897" height="257" rx="18" fill="none" stroke="url(#heroGrad)" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <!-- floating glow orbs -->
+  <circle cx="120" cy="60" r="55" fill="#22d3ee" opacity="0.18" filter="url(#blur1)">
+    <animate attributeName="cy" values="60;90;60" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="200" r="70" fill="#8b5cf6" opacity="0.20" filter="url(#blur2)">
+    <animate attributeName="cy" values="200;170;200" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="760" cy="40" r="35" fill="#22d3ee" opacity="0.15" filter="url(#blur1)">
+    <animate attributeName="cx" values="760;720;760" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- title -->
+  <text x="450" y="120" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="42" font-weight="700" fill="url(#heroGrad)">
+    Hi there, I'm Chethan
+  </text>
+  <text x="450" y="120" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="42" font-weight="700" fill="#e6edf3" opacity="0">
+    <animate attributeName="opacity" values="0;0;0" dur="1s"/>
+  </text>
+
+  <!-- subtitle typing line -->
+  <text x="450" y="165" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="17" fill="#8b9dc3">
+    Full-Stack Dev · AI Agent Engineer · Hackathon Builder
+  </text>
+
+  <!-- cursor blink -->
+  <rect x="620" y="150" width="10" height="20" fill="#22d3ee">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="450" y="205" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#5b6b8c">
+    2nd Year CSE · Presidency University, Bengaluru · Class of 2028
+  </text>
+
+  <!-- divider dots -->
+  <circle cx="380" cy="230" r="2.5" fill="#22d3ee"/>
+  <circle cx="450" cy="230" r="2.5" fill="#8b5cf6"/>
+  <circle cx="520" cy="230" r="2.5" fill="#22d3ee"/>
+</svg>

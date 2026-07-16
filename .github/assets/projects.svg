@@ -1,0 +1,73 @@
+<svg viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pjGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="pjBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#131a2b"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="900" height="420" rx="18" fill="url(#pjBg)"/>
+  <rect x="1.5" y="1.5" width="897" height="417" rx="18" fill="none" stroke="url(#pjGrad)" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <text x="40" y="45" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="url(#pjGrad)">🛠️ Featured Projects</text>
+  <line x1="40" y1="58" x2="860" y2="58" stroke="#22d3ee" stroke-opacity="0.2"/>
+
+  <!-- Card 1: CareAI -->
+  <g transform="translate(40,75)">
+    <rect width="390" height="150" rx="12" fill="#161b22" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#e6edf3">CareAI</text>
+    <text x="20" y="54" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#ffbd2e">🥇 Protenex Hackathon — Winner</text>
+    <text x="20" y="80" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">Health-sector AI agent solution built to</text>
+    <text x="20" y="98" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">close real accessibility gaps in care</text>
+    <text x="20" y="116" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">delivery — a working submission that won.</text>
+    <g font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#0d1117" font-weight="600">
+      <rect x="20" y="126" width="80" height="18" rx="9" fill="#22d3ee"/><text x="60" y="139" text-anchor="middle">Full-Stack</text>
+      <rect x="106" y="126" width="80" height="18" rx="9" fill="#8b5cf6"/><text x="146" y="139" text-anchor="middle" fill="#0d1117">AI Agents</text>
+    </g>
+  </g>
+
+  <!-- Card 2: TruthChain -->
+  <g transform="translate(470,75)">
+    <rect width="390" height="150" rx="12" fill="#161b22" stroke="#8b5cf6" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#e6edf3">TruthChain</text>
+    <text x="20" y="54" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#ffbd2e">🥇 Xpheria Hackathon — UI/UX Winner</text>
+    <text x="20" y="80" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">UI/UX-first full-stack build, recognized</text>
+    <text x="20" y="98" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">specifically for design execution — proof</text>
+    <text x="20" y="116" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">the interface matters as much as the backend.</text>
+    <g font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#0d1117" font-weight="600">
+      <rect x="20" y="126" width="80" height="18" rx="9" fill="#22d3ee"/><text x="60" y="139" text-anchor="middle">Full-Stack</text>
+      <rect x="106" y="126" width="70" height="18" rx="9" fill="#8b5cf6"/><text x="141" y="139" text-anchor="middle" fill="#0d1117">UI/UX</text>
+    </g>
+  </g>
+
+  <!-- Card 3: medAssist AI -->
+  <g transform="translate(40,240)">
+    <rect width="390" height="150" rx="12" fill="#161b22" stroke="#22d3ee" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#e6edf3">medAssist AI</text>
+    <text x="20" y="54" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b9dc3">AI-Powered Healthcare Assistant</text>
+    <text x="20" y="80" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">MERN-stack app with an AI agent layer,</text>
+    <text x="20" y="98" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">built to make healthcare guidance more</text>
+    <text x="20" y="116" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">accessible and easier to navigate.</text>
+    <g font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#0d1117" font-weight="600">
+      <rect x="20" y="126" width="60" height="18" rx="9" fill="#22d3ee"/><text x="50" y="139" text-anchor="middle">MERN</text>
+      <rect x="86" y="126" width="80" height="18" rx="9" fill="#8b5cf6"/><text x="126" y="139" text-anchor="middle" fill="#0d1117">AI Agents</text>
+    </g>
+  </g>
+
+  <!-- Card 4: DSA Mentor -->
+  <g transform="translate(470,240)">
+    <rect width="390" height="150" rx="12" fill="#161b22" stroke="#8b5cf6" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#e6edf3">DSA Mentor</text>
+    <text x="20" y="54" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8b9dc3">AI-Assisted Interview Prep</text>
+    <text x="20" y="80" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">Born out of my own interview-prep grind —</text>
+    <text x="20" y="98" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">an AI mentor built from real prep patterns</text>
+    <text x="20" y="116" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8b9dc3">to make DSA practice more practical.</text>
+    <g font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#0d1117" font-weight="600">
+      <rect x="20" y="126" width="80" height="18" rx="9" fill="#22d3ee"/><text x="60" y="139" text-anchor="middle">AI Agents</text>
+      <rect x="106" y="126" width="55" height="18" rx="9" fill="#8b5cf6"/><text x="133" y="139" text-anchor="middle" fill="#0d1117">DSA</text>
+    </g>
+  </g>
+</svg>
