@@ -1,18 +1,18 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,100:FF61D8&height=200&section=header&text=Chethan%20Gowda&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Frontend%20Developer%20%C2%B7%20CS%20Student%20%C2%B7%20Building%20on%20the%20web&descAlignY=58&descSize=18"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:12151A,50:5C6E4A,100:D9A566&height=200&section=header&text=Chethan%20Gowda&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Frontend%20Developer%20%C2%B7%20CS%20Student%20%C2%B7%20Building%20on%20the%20web&descAlignY=58&descSize=18"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=1000&color=FF61D8&center=true&vCenter=true&width=650&lines=Crafting+interfaces+that+feel+as+good+as+they+look+%E2%9C%A8;React+%7C+Next.js+%7C+TypeScript+%F0%9F%92%BB;Turning+designs+into+pixel-perfect+reality+%F0%9F%8E%A8)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2800&pause=1000&color=D9A566&center=true&vCenter=true&width=650&lines=Crafting+interfaces+that+feel+as+good+as+they+look+%E2%9C%A8;React+%7C+Next.js+%7C+TypeScript+%F0%9F%92%BB;Turning+designs+into+pixel-perfect+reality+%F0%9F%8E%A8)](https://git.io/typing-svg)
 
 <br/>
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=chethangowda-web.chethangowda-web&label=Visitors&color=FF61D8&style=flat-square)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=chethangowda-web.chethangowda-web&label=Visitors&color=D9A566&style=flat-square)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/chethan-gowda-s-n-abb165329/)
 [![Gmail](https://img.shields.io/badge/Gmail-Say%20Hi!-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:iamchethan2813@gmail.com)
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 👾 Who's Typing This?
 
@@ -43,7 +43,7 @@ class Chethan {
 
 <br clear="right"/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 🛠️ Tech Stack
 
@@ -61,34 +61,34 @@ class Chethan {
 | **Frontend** | React.js · Next.js · Tailwind CSS · HTML5 · CSS3 |
 | **Tools** | Git · GitHub · Figma · Vercel |
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=chethangowda-web&show_icons=true&theme=synthwave&hide_border=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chethangowda-web&layout=compact&theme=synthwave&hide_border=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=chethangowda-web&show_icons=true&hide_border=true&count_private=true&theme=gruvbox&title_color=D9A566&icon_color=D9A566&text_color=C9C2B6&bg_color=00000000"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chethangowda-web&layout=compact&hide_border=true&theme=gruvbox&title_color=D9A566&text_color=C9C2B6&bg_color=00000000"/>
 
 </div>
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com?user=chethangowda-web&theme=synthwave&hide_border=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=chethangowda-web&hide_border=true&theme=gruvbox&background=00000000&ring=D9A566&fire=D9A566&currStreakLabel=D9A566)
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 🏆 Trophy Shelf
 
 <div align="center">
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=chethangowda-web&theme=discord&no-frame=true&no-bg=true&margin-w=10)
+![Trophies](https://github-profile-trophy.vercel.app/?username=chethangowda-web&theme=gruvbox&no-frame=true&no-bg=true&margin-w=10)
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 🐍 My Contributions... Feeding the Snake
 
@@ -100,7 +100,7 @@ class Chethan {
 
 > ⚙️ *To enable the snake: go to **Actions** tab → enable workflows → the snake SVG will auto-generate on your next commit.*
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 🎯 2026 Roadmap
 
@@ -111,7 +111,7 @@ class Chethan {
   Q4 2026  ░░░░░░░░░░░░░░░░░░░░    0%  🔲  Land a Frontend / SDE internship
 ```
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 💡 The Builder's Edge
 
@@ -132,27 +132,27 @@ What chasing polish hardwires into me:
 
 <br clear="right"/>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 💬 Dev Quote of the Day
 
 <div align="center">
 
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)](https://github.com/piyushsuthar/github-readme-quotes)
+[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)](https://github.com/piyushsuthar/github-readme-quotes)
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8E2DE2,100:FF61D8&height=3"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:12151A,50:5C6E4A,100:D9A566&height=3"/>
 
 ## 📈 Contribution Graph
 
 <div align="center">
 
-[![Chethan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=chethangowda-web&theme=react-dark&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Chethan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=chethangowda-web&theme=react-dark&hide_border=true&color=D9A566&line=D9A566&point=5C6E4A&bg_color=00000000)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF61D8,100:8E2DE2&height=150&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:D9A566,50:5C6E4A,100:12151A&height=150&section=footer"/>
 
 <div align="center">
 
