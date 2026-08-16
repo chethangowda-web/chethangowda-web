@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#04060C"/>
+      <stop offset="100%" stop-color="#080E1A"/>
+    </linearGradient>
+    <linearGradient id="towerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#16263E"/>
+      <stop offset="50%" stop-color="#1B2B47"/>
+      <stop offset="100%" stop-color="#101B31"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4CC9F0" stop-opacity="0.6"/>
+      <stop offset="55%" stop-color="#7B61FF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#7B61FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#4CC9F0"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#0D1524" stroke-width="1"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <rect width="1200" height="420" fill="url(#grid)" opacity="0.4"/>
+
+  <!-- radiating network -->
+  <g fill="none" stroke-width="1.5" opacity="0.6">
+    <path d="M470 180 C 360 160, 260 140, 140 120" stroke="#B967FF"/>
+    <path d="M470 260 C 380 300, 260 320, 120 340" stroke="#00D4A8"/>
+    <path d="M730 180 C 840 160, 940 140, 1060 120" stroke="#4CC9F0"/>
+    <path d="M730 260 C 820 300, 940 320, 1080 340" stroke="#7B61FF"/>
+    <path d="M600 120 C 600 90, 600 70, 600 48" stroke="#4CC9F0" stroke-width="2"/>
+  </g>
+  <g>
+    <circle cx="300" cy="156" r="3" fill="#B967FF" filter="url(#soft)"/>
+    <circle cx="220" cy="310" r="3" fill="#00D4A8"/>
+    <circle cx="900" cy="156" r="3" fill="#4CC9F0" filter="url(#soft)"/>
+    <circle cx="960" cy="310" r="3" fill="#7B61FF"/>
+  </g>
+
+  <!-- district markers -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">
+    <circle cx="140" cy="120" r="16" fill="#0B1220" stroke="#B967FF" stroke-width="1.2"/>
+    <text x="140" y="124" text-anchor="middle" fill="#B967FF">AI</text>
+    <circle cx="120" cy="340" r="16" fill="#0B1220" stroke="#00D4A8" stroke-width="1.2"/>
+    <text x="120" y="344" text-anchor="middle" fill="#00D4A8">DATA</text>
+    <circle cx="1060" cy="120" r="16" fill="#0B1220" stroke="#4CC9F0" stroke-width="1.2"/>
+    <text x="1060" y="124" text-anchor="middle" fill="#4CC9F0">WEB</text>
+    <circle cx="1080" cy="340" r="16" fill="#0B1220" stroke="#7B61FF" stroke-width="1.2"/>
+    <text x="1080" y="344" text-anchor="middle" fill="#7B61FF">BACKEND</text>
+  </g>
+
+  <!-- central tower -->
+  <g>
+    <ellipse cx="600" cy="330" rx="230" ry="70" fill="url(#coreGlow)" filter="url(#glow)"/>
+    <line x1="600" y1="120" x2="600" y2="58" stroke="#4CC9F0" stroke-width="2.5"/>
+    <circle cx="600" cy="54" r="5" fill="#7BE3FF"/>
+    <circle cx="600" cy="54" r="12" fill="#4CC9F0" opacity="0.4" filter="url(#glow)"/>
+    <rect x="440" y="120" width="320" height="210" fill="url(#towerGrad)" stroke="#4CC9F0" stroke-width="1.5"/>
+    <line x1="500" y1="120" x2="500" y2="330" stroke="#0C1626" stroke-width="1"/>
+    <line x1="560" y1="120" x2="560" y2="330" stroke="#0C1626" stroke-width="1"/>
+    <line x1="620" y1="120" x2="620" y2="330" stroke="#0C1626" stroke-width="1"/>
+    <line x1="680" y1="120" x2="680" y2="330" stroke="#0C1626" stroke-width="1"/>
+    <g stroke="#4CC9F0" stroke-width="1">
+      <line x1="440" y1="170" x2="760" y2="170" opacity="0.5"/>
+      <line x1="440" y1="220" x2="760" y2="220" opacity="0.5"/>
+      <line x1="440" y1="270" x2="760" y2="270" opacity="0.5"/>
+    </g>
+    <text x="600" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="4" fill="#7BE3FF" font-weight="700">CHETHAN CORE</text>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" fill="#C9D6FF" text-anchor="middle">
+      <text x="600" y="196">FULL-STACK</text>
+      <text x="600" y="246" fill="#B967FF">AI</text>
+      <text x="600" y="296" fill="#7B61FF">BACKEND · SYSTEMS</text>
+    </g>
+    <!-- pulsing rings -->
+    <circle cx="600" cy="340" r="60" fill="none" stroke="#4CC9F0" stroke-width="1" opacity="0.4"/>
+    <circle cx="600" cy="340" r="95" fill="none" stroke="#7B61FF" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <text x="600" y="392" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" fill="#64748B">ONE ENGINEER CONNECTING MULTIPLE LAYERS OF SOFTWARE</text>
+</svg>

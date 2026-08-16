@@ -1,0 +1,137 @@
+<svg viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050309"/>
+      <stop offset="60%" stop-color="#0A0518"/>
+      <stop offset="100%" stop-color="#0E0722"/>
+    </linearGradient>
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B967FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#B967FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="corePulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E3C2FF" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#B967FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#B967FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#B967FF"/>
+    </linearGradient>
+    <linearGradient id="labGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#241342"/>
+      <stop offset="50%" stop-color="#1A0E33"/>
+      <stop offset="100%" stop-color="#120A24"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#140E26" stroke-width="1"/>
+    </pattern>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="floatShadow"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.7"/></filter>
+  </defs>
+
+  <rect width="1200" height="540" fill="url(#bg)"/>
+  <rect width="1200" height="540" fill="url(#grid)" opacity="0.4"/>
+  <ellipse cx="600" cy="440" rx="520" ry="70" fill="url(#glowPurple)" filter="url(#glow)"/>
+
+  <!-- ============ AGENT LAB (floating) ============ -->
+  <g filter="url(#floatShadow)">
+    <rect x="340" y="36" width="520" height="150" rx="12" fill="url(#labGrad)" stroke="#B967FF" stroke-width="1.5"/>
+    <line x1="340" y1="72" x2="860" y2="72" stroke="#2A1747" stroke-width="1"/>
+    <!-- floating glow under lab -->
+    <ellipse cx="600" cy="196" rx="200" ry="14" fill="#B967FF" opacity="0.25" filter="url(#soft)"/>
+    <text x="600" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="5" fill="#E3C2FF" font-weight="700">AGENT LAB</text>
+    <!-- protocol hub -->
+    <circle cx="600" cy="118" r="20" fill="#0B1220" stroke="#B967FF" stroke-width="1.5"/>
+    <circle cx="600" cy="118" r="9" fill="#B967FF"/>
+    <circle cx="600" cy="118" r="28" fill="none" stroke="#B967FF" stroke-width="1" opacity="0.4"/>
+    <!-- agent nodes -->
+    <g font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="1.5">
+      <circle cx="410" cy="118" r="17" fill="#0B1220" stroke="#B967FF" stroke-width="1.2"/>
+      <text x="410" y="122" text-anchor="middle" fill="#E3C2FF">MCP</text>
+      <circle cx="505" cy="96" r="17" fill="#0B1220" stroke="#7B61FF" stroke-width="1.2"/>
+      <text x="505" y="100" text-anchor="middle" fill="#C9BFFF">A2A</text>
+      <circle cx="505" cy="142" r="17" fill="#0B1220" stroke="#4CC9F0" stroke-width="1.2"/>
+      <text x="505" y="146" text-anchor="middle" fill="#A9E7FF">ADK</text>
+      <circle cx="695" cy="96" r="17" fill="#0B1220" stroke="#00D4A8" stroke-width="1.2"/>
+      <text x="695" y="100" text-anchor="middle" fill="#7CFFDD">MASTRA</text>
+      <circle cx="695" cy="142" r="17" fill="#0B1220" stroke="#B967FF" stroke-width="1.2"/>
+      <text x="695" y="146" text-anchor="middle" fill="#E3C2FF">GEMINI</text>
+      <circle cx="790" cy="118" r="17" fill="#0B1220" stroke="#7B61FF" stroke-width="1.2"/>
+      <text x="790" y="122" text-anchor="middle" fill="#C9BFFF">GROQ</text>
+    </g>
+    <!-- neural links inside lab -->
+    <g stroke="#B967FF" stroke-width="1" opacity="0.55">
+      <path d="M427 118 L 488 112"/><path d="M427 118 L 488 130"/>
+      <path d="M522 100 L 583 112"/><path d="M617 112 L 678 102"/><path d="M617 126 L 678 136"/>
+      <path d="M712 100 L 773 114"/>
+    </g>
+  </g>
+  <!-- tether to AI core -->
+  <line x1="600" y1="186" x2="600" y2="250" stroke="#B967FF" stroke-width="1" stroke-dasharray="3 4" opacity="0.5"/>
+
+  <!-- ============ AI CORE ============ -->
+  <g>
+    <ellipse cx="600" cy="430" rx="330" ry="60" fill="url(#glowPurple)" filter="url(#glow)"/>
+    <circle cx="600" cy="330" r="95" fill="url(#corePulse)" filter="url(#glow)"/>
+    <circle cx="600" cy="330" r="55" fill="#0B1220" stroke="#B967FF" stroke-width="2"/>
+    <circle cx="600" cy="330" r="34" fill="#B967FF" opacity="0.15"/>
+    <circle cx="600" cy="330" r="14" fill="#E3C2FF"/>
+    <circle cx="600" cy="330" r="22" fill="none" stroke="#E3C2FF" stroke-width="1" opacity="0.6"/>
+    <circle cx="600" cy="330" r="70" fill="none" stroke="#B967FF" stroke-width="1" opacity="0.35"/>
+    <circle cx="600" cy="330" r="120" fill="none" stroke="#B967FF" stroke-width="1" opacity="0.2"/>
+    <text x="600" y="452" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5" fill="#E3C2FF" font-weight="700">AI CORE</text>
+  </g>
+
+  <!-- ============ NEURAL NETWORK NODES ============ -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">
+    <circle cx="250" cy="290" r="34" fill="#0B1220" stroke="#B967FF" stroke-width="1.4"/>
+    <text x="250" y="294" text-anchor="middle" fill="#E3C2FF">LLMs</text>
+    <circle cx="360" cy="430" r="34" fill="#0B1220" stroke="#7B61FF" stroke-width="1.4"/>
+    <text x="360" y="434" text-anchor="middle" fill="#C9BFFF">RAG</text>
+    <circle cx="470" cy="225" r="34" fill="#0B1220" stroke="#4CC9F0" stroke-width="1.4"/>
+    <text x="470" y="229" text-anchor="middle" fill="#A9E7FF">VECTOR</text>
+    <text x="470" y="243" text-anchor="middle" font-size="9" fill="#A9E7FF">SEARCH</text>
+    <circle cx="730" cy="225" r="34" fill="#0B1220" stroke="#B967FF" stroke-width="1.4"/>
+    <text x="730" y="229" text-anchor="middle" fill="#E3C2FF">AI</text>
+    <text x="730" y="243" text-anchor="middle" font-size="9" fill="#E3C2FF">AGENTS</text>
+    <circle cx="840" cy="430" r="34" fill="#0B1220" stroke="#00D4A8" stroke-width="1.4"/>
+    <text x="840" y="434" text-anchor="middle" fill="#7CFFDD">MULTI</text>
+    <text x="840" y="448" text-anchor="middle" font-size="9" fill="#7CFFDD">AGENT</text>
+    <circle cx="950" cy="300" r="34" fill="#0B1220" stroke="#7B61FF" stroke-width="1.4"/>
+    <text x="950" y="304" text-anchor="middle" fill="#C9BFFF">EMBED</text>
+    <text x="950" y="318" text-anchor="middle" font-size="9" fill="#C9BFFF">DINGS</text>
+  </g>
+
+  <!-- neural connections -->
+  <g fill="none" stroke-width="1.2" opacity="0.6">
+    <path d="M 284 290 C 380 250, 420 240, 436 230" stroke="#B967FF"/>
+    <path d="M 284 290 C 340 320, 350 380, 362 396" stroke="#7B61FF"/>
+    <path d="M 470 259 C 500 300, 500 300, 546 322" stroke="#4CC9F0"/>
+    <path d="M 730 259 C 700 300, 700 300, 654 322" stroke="#B967FF"/>
+    <path d="M 730 259 C 700 250, 680 240, 660 235" stroke="#B967FF" opacity="0.4"/>
+    <path d="M 764 225 C 800 230, 830 260, 812 396" stroke="#00D4A8"/>
+    <path d="M 916 300 C 840 300, 760 320, 660 335" stroke="#7B61FF"/>
+    <path d="M 916 300 C 880 340, 860 380, 842 396" stroke="#7B61FF"/>
+  </g>
+  <g>
+    <circle cx="340" cy="300" r="3" fill="#B967FF" filter="url(#soft)"/>
+    <circle cx="490" cy="330" r="3" fill="#4CC9F0"/>
+    <circle cx="700" cy="340" r="3" fill="#B967FF" filter="url(#soft)"/>
+    <circle cx="860" cy="360" r="3" fill="#00D4A8"/>
+    <circle cx="890" cy="310" r="3" fill="#7B61FF"/>
+  </g>
+
+  <!-- particles -->
+  <g>
+    <circle cx="200" cy="380" r="1.8" fill="#B967FF" filter="url(#soft)"/>
+    <circle cx="1000" cy="380" r="1.8" fill="#7B61FF"/>
+    <circle cx="520" cy="160" r="1.6" fill="#E3C2FF"/>
+    <circle cx="680" cy="165" r="1.6" fill="#E3C2FF" filter="url(#soft)"/>
+    <circle cx="150" cy="250" r="1.5" fill="#4CC9F0"/>
+  </g>
+
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="4" fill="#64748B">AUTONOMOUS AGENT NETWORK — DISTRIBUTED INTELLIGENCE</text>
+  <text x="600" y="66" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800" letter-spacing="8" fill="url(#titleGrad)">AI RESEARCH DISTRICT</text>
+</svg>
