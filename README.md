@@ -10,11 +10,6 @@
 <tr>
 <td width="62%" valign="top">
 
-<img src="assets/readme/architecture.svg" width="100%" alt="Frontend to Infrastructure flow" />
-
-</td>
-<td width="38%" valign="top">
-
 <sub>WHO I AM</sub>
 
 <h2>ENGINEER / BUILDER</h2>
@@ -28,21 +23,6 @@ Computer Science student building full-stack applications, AI agents, and intell
 <sub>OPEN TO — FRONTEND / SDE INTERNSHIPS, Q4 2026</sub>
 
 </td>
-</tr>
-</table>
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="33%"><img src="assets/readme/domain-frontend.svg" width="100%" alt="Frontend" /></td>
-<td width="33%"><img src="assets/readme/domain-backend.svg" width="100%" alt="Backend" /></td>
-<td width="34%"><img src="assets/readme/domain-ai.svg" width="100%" alt="AI" /></td>
-</tr>
-<tr>
-<td width="33%"><img src="assets/readme/domain-data.svg" width="100%" alt="Data" /></td>
-<td width="33%"><img src="assets/readme/domain-aiinfra.svg" width="100%" alt="AI Infrastructure" /></td>
-<td width="34%"><img src="assets/readme/domain-devops.svg" width="100%" alt="DevOps" /></td>
 </tr>
 </table>
 
