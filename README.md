@@ -1,352 +1,117 @@
 <div align="center">
 
-```
-╭──────────────────────────────────────────────────────────────────╮
-│                                                                    │
-│                     ◆  CHARACTER PROFILE  ◆                       │
-│                                                                    │
-│                       C H E T H A N   G O W D A                   │
-│                                                                    │
-│                    FULL-STACK  ·  AI  ·  SYSTEMS                  │
-│                                                                    │
-│           Computer Science Engineering  │  India                  │
-│                                                                    │
-│        [ ONLINE ]     [ BUILDING ]     [ LEARNING ]               │
-│                                                                    │
-╰──────────────────────────────────────────────────────────────────╯
-```
-
-### `CLASS: FULL-STACK AI ENGINEER`&nbsp;&nbsp;·&nbsp;&nbsp;`BUILD: 2026`&nbsp;&nbsp;·&nbsp;&nbsp;`STATUS: ACTIVELY BUILDING`
+<img src="assets/readme/hero.svg" width="100%" alt="Chethan Gowda — Engineering Lab" />
 
 </div>
 
-<br>
-
-<img width="100%" height="2" src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif">
-
-<br>
-
-## `◆ CHARACTER PROFILE`
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│  NAME        Chethan Gowda                                       │
-│  CLASS       Full-Stack AI Engineer                              │
-│  ORIGIN      Computer Science Engineering (3rd Year)             │
-│  SPECIALTY   AI Systems + Full-Stack Web Applications            │
-│  STATUS      Building                                            │
-│  TARGET      Software Engineer / SDE Internship                  │
-└──────────────────────────────────────────────────────────────────┘
-```
-
-I'm a third-year Computer Science Engineering student working across the
-**full stack** — frontend, backend, databases, and AI systems. I build
-production-style applications and multi-agent AI systems, not just UI.
-
-<br>
-
-## `◆ CORE ATTRIBUTES`
-> `PERSONAL LEARNING FOCUS` — qualitative, not a measured ranking.
-
-```
-FULL-STACK ENGINEERING     ◆◆◆◆◆
-AI ENGINEERING              ◆◆◆◆◇
-BACKEND DEVELOPMENT         ◆◆◆◆◇
-PROBLEM SOLVING / DSA       ◆◆◆◆◇
-SYSTEM DESIGN               ◆◆◆◇◇
-CLOUD / DEVOPS               ◆◆◆◇◇
-```
-
-<br>
-
-## `◆ SKILL TREE`
-
-```
-                              ┌─────────────────────┐
-                              │  SOFTWARE ENGINEER   │
-                              └───────────┬───────────┘
-                                          │
-                ┌──────────────────────────┼──────────────────────────┐
-                ↓                          ↓                          ↓
-        ┌───────────────┐          ┌───────────────┐          ┌───────────────┐
-        │   FRONTEND     │          │    BACKEND     │          │       AI       │
-        └───────┬───────┘          └───────┬───────┘          └───────┬───────┘
-                │                          │                          │
-        React / Next.js            Node.js / Express          LLMs · RAG · Agents
-        TypeScript                 FastAPI                    MCP · A2A · ADK
-        Tailwind CSS                PostgreSQL · Redis         Mastra · Gemini · Groq
-```
-
-<br>
-
-## `◆ INVENTORY`
+<br/>
 
 <table width="100%">
 <tr>
-<td valign="top" width="33%">
+<td width="62%" valign="top">
 
-**LANGUAGES**
-Java · Python · JavaScript
-TypeScript · SQL · HTML · CSS
-
-**FRONTEND**
-React.js · Next.js
-Tailwind CSS
-
-**BACKEND**
-Node.js · Express.js
-FastAPI · REST APIs
+<img src="assets/readme/architecture.svg" width="100%" alt="Frontend to Infrastructure flow" />
 
 </td>
-<td valign="top" width="33%">
+<td width="38%" valign="top">
 
-**DATABASE**
-PostgreSQL · MongoDB
-MySQL · Redis
+<sub>WHO I AM</sub>
 
-**AI / ML**
-Generative AI · LLM Apps · RAG
-AI Agents · Multi-Agent Systems
-scikit-learn · Hugging Face
-Sentence Transformers
-Ollama · Qdrant
+<h2>ENGINEER / BUILDER</h2>
 
-</td>
-<td valign="top" width="33%">
+Computer Science student building full-stack applications, AI agents, and intelligent systems.
 
-**AI ENGINEERING**
-Gemini · Groq
-Google AI Studio · ADK
-MCP · A2A · Mastra
+<sub>Presidency University, Bengaluru · Batch 2023–2027</sub>
 
-**INFRASTRUCTURE**
-Docker · Kubernetes
-Celery · Git · GitHub · Vercel
+<br/><br/>
 
-**TOOLS**
-Firebase · Playwright
-Google Maps API · Figma
+<sub>OPEN TO — FRONTEND / SDE INTERNSHIPS, Q4 2026</sub>
 
 </td>
 </tr>
 </table>
 
-<br>
+<br/>
 
-## `◆ QUEST LOG`
+<table width="100%">
+<tr>
+<td width="33%"><img src="assets/readme/domain-frontend.svg" width="100%" alt="Frontend" /></td>
+<td width="33%"><img src="assets/readme/domain-backend.svg" width="100%" alt="Backend" /></td>
+<td width="34%"><img src="assets/readme/domain-ai.svg" width="100%" alt="AI" /></td>
+</tr>
+<tr>
+<td width="33%"><img src="assets/readme/domain-data.svg" width="100%" alt="Data" /></td>
+<td width="33%"><img src="assets/readme/domain-aiinfra.svg" width="100%" alt="AI Infrastructure" /></td>
+<td width="34%"><img src="assets/readme/domain-devops.svg" width="100%" alt="DevOps" /></td>
+</tr>
+</table>
 
-### `QUEST 01`
+<br/>
 
-```
-╭──────────────────────────────────────────────────────────────────╮
-│  SARA                                                             │
-│  Smart Accountability & Resolution Assistant                      │
-│                                                                    │
-│  TYPE     AI GOVERNMENT SYSTEM                                    │
-│  STATUS   ACTIVE                                                  │
-│                                                                    │
-│  OBJECTIVE                                                        │
-│  Build an AI-assisted accountability and escalation layer         │
-│  for government grievance systems.                                │
-╰──────────────────────────────────────────────────────────────────╯
-```
-`FastAPI` `PostgreSQL` `Redis` `Celery` `React` `Docker` `Hugging Face` `Sentence Transformers` `Ollama` `Playwright`
+<img src="assets/readme/stack.svg" width="100%" alt="Technology constellation" />
 
-The core challenge: matching, escalating, and tracking grievances semantically
-instead of by keyword, while keeping the pipeline auditable end-to-end.
+<br/><br/>
 
-<br>
+<div align="center">
+<sub>SELECTED WORK</sub>
+</div>
 
-### `QUEST 02`
+<img src="assets/readme/sara-card.svg" width="100%" alt="SARA — Smart Accountability and Resolution Assistant" />
 
-```
-╭──────────────────────────────────────────────────────────────────╮
-│  SENTINELFLOW AI                                                  │
-│  AI Incident Response & Post-Mortem Agent                         │
-│                                                                    │
-│  TYPE     AI AGENT SYSTEM                                         │
-│  STATUS   ACTIVE                                                  │
-│  DOMAIN   INCIDENT RESPONSE                                       │
-│  STACK    TypeScript · Node.js · Mastra · Groq                    │
-╰──────────────────────────────────────────────────────────────────╯
-```
-Agent-driven incident analysis with automated post-mortem generation and
-multi-step agent orchestration handling the response workflow.
+<br/>
 
-<br>
+<table width="100%">
+<tr>
+<td width="50%"><img src="assets/readme/sentinelflow-card.svg" width="100%" alt="SentinelFlow AI" /></td>
+<td width="50%"><img src="assets/readme/medflow-card.svg" width="100%" alt="MedFlow AI" /></td>
+</tr>
+</table>
 
-### `QUEST 03`
+<br/>
 
-```
-╭──────────────────────────────────────────────────────────────────╮
-│  MEDFLOW AI                                                       │
-│  Hospital Care Coordination Multi-Agent System                    │
-╰──────────────────────────────────────────────────────────────────╯
-```
+<img src="assets/readme/currently-building.svg" width="100%" alt="Currently building" />
 
-```
-                          MEDFLOW AI
-                              │
-                    ┌─────────┴─────────┐
-                    │    ORCHESTRATOR    │
-                    └─────────┬─────────┘
-                              │
-              ┌───────────────┼───────────────┐
-              ↓               ↓               ↓
-           INTAKE        RISK ENGINE       HISTORY
-              │               │               │
-              └───────────────┼───────────────┘
-                              ↓
-                     TREATMENT PLANNING
-                              ↓
-                     MEDICATION CHECK
-                              ↓
-                         DISCHARGE
-                              ↓
-                        FOLLOW-UP
-```
+<br/><br/>
 
-Built with **Gemini**, multi-agent orchestration, **MCP**, medical RAG, and
-long-context memory across the care pipeline.
+<img src="assets/readme/achievements.svg" width="100%" alt="Achievements" />
 
-<br>
+<br/><br/>
 
-### `QUEST 04`
+<table width="100%">
+<tr>
+<td width="60%" valign="top">
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│  SPENDWISE — Expense tracking & budget intelligence application  │
-│  React · Firebase · Chart.js                                     │
-└──────────────────────────────────────────────────────────────────┘
-```
+<sub>GITHUB ACTIVITY</sub>
 
-<br>
+<br/><br/>
 
-## `◆ ACHIEVEMENT UNLOCKED`
+<img src="https://github-readme-stats.vercel.app/api?username=chethangowda-web&show_icons=true&hide_border=true&bg_color=0B0D10&title_color=3B82F6&icon_color=22D3EE&text_color=C9D3E0&border_color=242832" width="100%" alt="GitHub stats" />
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│ ◆ AI AGENT BUILDER                                                │
-│   Advanced to Round 2 — HiDevs × Mastra AI Agent Builder Hackathon │
-├──────────────────────────────────────────────────────────────────┤
-│ ◆ MULTI-AGENT ARCHITECT                                           │
-│   Built a healthcare coordination multi-agent system (MedFlow AI)│
-├──────────────────────────────────────────────────────────────────┤
-│ ◆ CIVIC TECH BUILDER                                              │
-│   Built SARA for government grievance accountability              │
-├──────────────────────────────────────────────────────────────────┤
-│ ◆ SYSTEM BUILDER                                                   │
-│   Building full-stack applications across frontend, backend,      │
-│   AI and infrastructure                                           │
-└──────────────────────────────────────────────────────────────────┘
-```
+</td>
+<td width="40%" valign="top">
 
-<br>
+<sub>LANGUAGE DNA</sub>
 
-## `◆ ACTIVE MISSIONS`
+<br/><br/>
 
-```
-[ ACTIVE ]  Master DSA for SDE interviews
-[ ACTIVE ]  Deepen system design
-[ ACTIVE ]  Build production-quality full-stack systems
-[ ACTIVE ]  Build AI agent architectures
-[ ACTIVE ]  Improve backend engineering
-[ ACTIVE ]  Learn cloud / Kubernetes
-[ TARGET ]  Software Engineer / SDE Internship
-```
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chethangowda-web&layout=compact&hide_border=true&bg_color=0B0D10&title_color=8B5CF6&text_color=C9D3E0&border_color=242832" width="100%" alt="Top languages" />
 
-<br>
+</td>
+</tr>
+</table>
 
-## `◆ BOSS BATTLES`
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│ BOSS 01 — DYNAMIC PROGRAMMING          STATUS: TRAINING           │
-├──────────────────────────────────────────────────────────────────┤
-│ BOSS 02 — SYSTEM DESIGN                STATUS: LEARNING           │
-├──────────────────────────────────────────────────────────────────┤
-│ BOSS 03 — DISTRIBUTED SYSTEMS          STATUS: UPCOMING           │
-├──────────────────────────────────────────────────────────────────┤
-│ BOSS 04 — KUBERNETES / CLOUD           STATUS: EXPLORING          │
-└──────────────────────────────────────────────────────────────────┘
-```
-
-<br>
-
-## `◆ PLAYER PHILOSOPHY`
+<br/>
 
 <div align="center">
 
-> Build it. Understand it. Break it. Debug it. Scale it. Repeat.
->
-> I want to understand not only how software works, but why it works,
-> where it fails, and how to make it better.
+## LET'S BUILD
+
+<a href="https://github.com/chethangowda-web"><img src="https://img.shields.io/badge/GITHUB-0B0D10?style=for-the-badge&logo=github&logoColor=F5F7FA&labelColor=0B0D10" /></a>
+<a href="https://www.linkedin.com/in/chethan-gowda-s-n-abb165329/"><img src="https://img.shields.io/badge/LINKEDIN-0B0D10?style=for-the-badge&logo=linkedin&logoColor=3B82F6&labelColor=0B0D10" /></a>
+<a href="mailto:iamchethan2813@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0B0D10?style=for-the-badge&logo=gmail&logoColor=22D3EE&labelColor=0B0D10" /></a>
 
 </div>
 
-<br>
+<br/>
 
-## `◆ CURRENT BUILD`
-
-```
-IDEA
- ↓
-AI / BUSINESS LOGIC
- ↓
-BACKEND API
- ↓
-DATABASE
- ↓
-AI AGENTS / RAG
- ↓
-FRONTEND
- ↓
-DOCKER
- ↓
-DEPLOYMENT
-```
-
-<br>
-
-## `◆ CHARACTER RECORD`
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=chethangowda-web&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00f0ff&icon_color=a855f7&text_color=c9d1d9" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=chethangowda-web&layout=compact&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00f0ff&text_color=c9d1d9" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=chethangowda-web&theme=dark&hide_border=true&background=0d1117&ring=00f0ff&fire=a855f7&currStreakLabel=00f0ff" />
-
-</div>
-
-<br>
-
-## `◆ JOIN THE PARTY`
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-chethangowda--web-0d1117?style=for-the-badge&logo=github&logoColor=00f0ff)](https://github.com/chethangowda-web)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Chethan_Gowda-0d1117?style=for-the-badge&logo=linkedin&logoColor=a855f7)](https://www.linkedin.com/in/chethan-gowda-s-n-abb165329/)
-[![Email](https://img.shields.io/badge/Email-iamchethan2813-0d1117?style=for-the-badge&logo=gmail&logoColor=00f0ff)](mailto:iamchethan2813@gmail.com)
-
-</div>
-
-<br>
-
-```
-╭──────────────────────────────────────────────────────────────────╮
-│                                                                    │
-│                     ◆  SAVE FILE UPDATED  ◆                       │
-│                                                                    │
-│                   CHETHAN GOWDA // 2026 BUILD                     │
-│                                                                    │
-│                    STATUS: STILL BUILDING                         │
-│                                                                    │
-│               NEXT QUEST: SOFTWARE ENGINEERING                    │
-│                                                                    │
-│                          > CONTINUE_                               │
-│                                                                    │
-╰──────────────────────────────────────────────────────────────────╯
-```
-
-</div>
+<img src="assets/readme/footer.svg" width="100%" alt="Chethan Gowda — Engineering Lab / 2026" />
