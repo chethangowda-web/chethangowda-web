@@ -1,0 +1,104 @@
+<svg viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="gridCb" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#12151B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="260" fill="#050505"/>
+  <rect width="1200" height="260" fill="url(#gridCb)"/>
+  <rect x="0.5" y="0.5" width="1199" height="259" fill="none" stroke="#242832" rx="16"/>
+
+  <text x="40" y="46" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="5" fill="#8B93A1">CURRENTLY BUILDING</text>
+  <line x1="40" y1="62" x2="1160" y2="62" stroke="#1A1E26"/>
+
+  <!-- 6 columns -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <!-- col template positions: x start 40, width 180, gap 6 -->
+
+    <!-- DSA — DEEPENING -->
+    <g>
+      <rect x="40" y="90" width="176" height="140" rx="12" fill="#0B0D10" stroke="#242832"/>
+      <rect x="58" y="108" width="70" height="20" rx="10" fill="#1B1530" stroke="#8B5CF6"/>
+      <text x="93" y="122" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#B79CFF" font-weight="700">DEEPENING</text>
+      <text x="58" y="168" font-size="16" font-weight="800" fill="#F5F7FA">DSA</text>
+      <g fill="#8B5CF6">
+        <rect x="58" y="196" width="20" height="6" rx="3"/>
+        <rect x="82" y="196" width="20" height="6" rx="3"/>
+        <rect x="106" y="196" width="20" height="6" rx="3"/>
+        <rect x="130" y="196" width="20" height="6" rx="3" opacity="0.35"/>
+      </g>
+    </g>
+
+    <!-- SYSTEM DESIGN — BUILDING -->
+    <g>
+      <rect x="222" y="90" width="176" height="140" rx="12" fill="#0B0D10" stroke="#242832"/>
+      <rect x="240" y="108" width="62" height="20" rx="10" fill="#0E2440" stroke="#3B82F6"/>
+      <text x="271" y="122" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#5B9BFB" font-weight="700">BUILDING</text>
+      <text x="240" y="160" font-size="14" font-weight="800" fill="#F5F7FA">SYSTEM</text>
+      <text x="240" y="178" font-size="14" font-weight="800" fill="#F5F7FA">DESIGN</text>
+      <g fill="#3B82F6">
+        <rect x="240" y="196" width="20" height="6" rx="3"/>
+        <rect x="264" y="196" width="20" height="6" rx="3"/>
+        <rect x="288" y="196" width="20" height="6" rx="3" opacity="0.35"/>
+        <rect x="312" y="196" width="20" height="6" rx="3" opacity="0.35"/>
+      </g>
+    </g>
+
+    <!-- FULL-STACK — BUILDING -->
+    <g>
+      <rect x="404" y="90" width="176" height="140" rx="12" fill="#0B0D10" stroke="#242832"/>
+      <rect x="422" y="108" width="62" height="20" rx="10" fill="#0E2440" stroke="#3B82F6"/>
+      <text x="453" y="122" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#5B9BFB" font-weight="700">BUILDING</text>
+      <text x="422" y="168" font-size="14" font-weight="800" fill="#F5F7FA">FULL-STACK</text>
+      <g fill="#3B82F6">
+        <rect x="422" y="196" width="20" height="6" rx="3"/>
+        <rect x="446" y="196" width="20" height="6" rx="3"/>
+        <rect x="470" y="196" width="20" height="6" rx="3"/>
+        <rect x="494" y="196" width="20" height="6" rx="3" opacity="0.35"/>
+      </g>
+    </g>
+
+    <!-- AI AGENTS — FOCUS -->
+    <g>
+      <rect x="586" y="90" width="176" height="140" rx="12" fill="#0B0D10" stroke="#22D3EE" stroke-width="1.4"/>
+      <rect x="604" y="108" width="50" height="20" rx="10" fill="#0A2A2E" stroke="#22D3EE"/>
+      <text x="629" y="122" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#22D3EE" font-weight="700">FOCUS</text>
+      <text x="604" y="160" font-size="14" font-weight="800" fill="#F5F7FA">AI</text>
+      <text x="604" y="178" font-size="14" font-weight="800" fill="#F5F7FA">AGENTS</text>
+      <g fill="#22D3EE">
+        <rect x="604" y="196" width="20" height="6" rx="3"/>
+        <rect x="628" y="196" width="20" height="6" rx="3"/>
+        <rect x="652" y="196" width="20" height="6" rx="3"/>
+        <rect x="676" y="196" width="20" height="6" rx="3"/>
+      </g>
+    </g>
+
+    <!-- BACKEND — DEEPENING -->
+    <g>
+      <rect x="768" y="90" width="176" height="140" rx="12" fill="#0B0D10" stroke="#242832"/>
+      <rect x="786" y="108" width="70" height="20" rx="10" fill="#1B1530" stroke="#8B5CF6"/>
+      <text x="821" y="122" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#B79CFF" font-weight="700">DEEPENING</text>
+      <text x="786" y="168" font-size="16" font-weight="800" fill="#F5F7FA">BACKEND</text>
+      <g fill="#8B5CF6">
+        <rect x="786" y="196" width="20" height="6" rx="3"/>
+        <rect x="810" y="196" width="20" height="6" rx="3"/>
+        <rect x="834" y="196" width="20" height="6" rx="3"/>
+        <rect x="858" y="196" width="20" height="6" rx="3" opacity="0.35"/>
+      </g>
+    </g>
+
+    <!-- CLOUD — EXPLORING -->
+    <g>
+      <rect x="950" y="90" width="176" height="140" rx="12" fill="#0B0D10" stroke="#242832"/>
+      <rect x="968" y="108" width="72" height="20" rx="10" fill="#151821" stroke="#4B5262"/>
+      <text x="1004" y="122" text-anchor="middle" font-size="9" letter-spacing="1.5" fill="#8B93A1" font-weight="700">EXPLORING</text>
+      <text x="968" y="168" font-size="16" font-weight="800" fill="#F5F7FA">CLOUD</text>
+      <g fill="#4B5262">
+        <rect x="968" y="196" width="20" height="6" rx="3"/>
+        <rect x="992" y="196" width="20" height="6" rx="3" opacity="0.4"/>
+        <rect x="1016" y="196" width="20" height="6" rx="3" opacity="0.4"/>
+        <rect x="1040" y="196" width="20" height="6" rx="3" opacity="0.4"/>
+      </g>
+    </g>
+  </g>
+</svg>

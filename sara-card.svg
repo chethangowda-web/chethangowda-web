@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="saraGlow" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="saraFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <pattern id="gridSara" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#12151B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="420" fill="#050505"/>
+  <rect width="1200" height="420" fill="url(#gridSara)"/>
+  <rect width="1200" height="420" fill="url(#saraGlow)"/>
+  <rect x="0.5" y="0.5" width="1199" height="419" fill="none" stroke="#242832" rx="18"/>
+
+  <text x="60" y="58" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="5" fill="#8B93A1">SELECTED WORK / 01</text>
+  <text x="60" y="98" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" fill="#F5F7FA">SARA</text>
+  <text x="60" y="126" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5B9BFB" letter-spacing="1">Smart Accountability &amp; Resolution Assistant</text>
+
+  <!-- pipeline -->
+  <line x1="80" y1="230" x2="1120" y2="230" stroke="url(#saraFlow)" stroke-width="1.6" opacity="0.6"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <!-- Citizen -->
+    <circle cx="120" cy="230" r="9" fill="#0B0D10" stroke="#3B82F6" stroke-width="2.2"/>
+    <text x="120" y="266" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#C9D3E0" font-weight="700">CITIZEN</text>
+
+    <!-- Grievance -->
+    <circle cx="310" cy="230" r="9" fill="#0B0D10" stroke="#3B82F6" stroke-width="2.2"/>
+    <text x="310" y="266" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#C9D3E0" font-weight="700">GRIEVANCE</text>
+
+    <!-- AI Analysis (emphasized) -->
+    <circle cx="500" cy="230" r="24" fill="#11141A" stroke="#22D3EE" stroke-width="1" opacity="0.5"/>
+    <circle cx="500" cy="230" r="12" fill="#0B0D10" stroke="#22D3EE" stroke-width="2.4"/>
+    <text x="500" y="270" text-anchor="middle" font-size="11.5" letter-spacing="1.5" fill="#22D3EE" font-weight="800">AI ANALYSIS</text>
+
+    <!-- Accountability -->
+    <circle cx="690" cy="230" r="9" fill="#0B0D10" stroke="#8B5CF6" stroke-width="2.2"/>
+    <text x="690" y="266" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#C9D3E0" font-weight="700">ACCOUNTABILITY</text>
+
+    <!-- Escalation -->
+    <circle cx="880" cy="230" r="9" fill="#0B0D10" stroke="#8B5CF6" stroke-width="2.2"/>
+    <text x="880" y="266" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#C9D3E0" font-weight="700">ESCALATION</text>
+
+    <!-- Resolution -->
+    <circle cx="1080" cy="230" r="10" fill="#0B0D10" stroke="#3BE0A0" stroke-width="2.4"/>
+    <text x="1080" y="266" text-anchor="middle" font-size="11.5" letter-spacing="1.5" fill="#3BE0A0" font-weight="800">RESOLUTION</text>
+  </g>
+
+  <!-- connecting glow beneath AI analysis -->
+  <path d="M500 230 L500 200" stroke="#22D3EE" stroke-width="1" opacity="0.4"/>
+
+  <!-- tech row -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#8B93A1">
+    <rect x="60" y="352" width="70" height="26" rx="13" fill="#11141A" stroke="#242832"/>
+    <text x="95" y="369" text-anchor="middle">FastAPI</text>
+    <rect x="138" y="352" width="98" height="26" rx="13" fill="#11141A" stroke="#242832"/>
+    <text x="187" y="369" text-anchor="middle">PostgreSQL</text>
+    <rect x="244" y="352" width="66" height="26" rx="13" fill="#11141A" stroke="#242832"/>
+    <text x="277" y="369" text-anchor="middle">Redis</text>
+    <rect x="318" y="352" width="66" height="26" rx="13" fill="#11141A" stroke="#242832"/>
+    <text x="351" y="369" text-anchor="middle">React</text>
+    <rect x="392" y="352" width="52" height="26" rx="13" fill="#11141A" stroke="#242832"/>
+    <text x="418" y="369" text-anchor="middle">AI</text>
+  </g>
+
+  <text x="1140" y="369" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2" fill="#4B5262">CIVIC TECH · GOVERNANCE</text>
+</svg>

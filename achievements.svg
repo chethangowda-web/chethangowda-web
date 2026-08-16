@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1200 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="gridAch" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#12151B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="180" fill="#050505"/>
+  <rect width="1200" height="180" fill="url(#gridAch)"/>
+  <rect x="0.5" y="0.5" width="1199" height="179" fill="none" stroke="#242832" rx="16"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <!-- Badge 1 -->
+    <rect x="30" y="24" width="270" height="132" rx="12" fill="#0B0D10" stroke="#242832"/>
+    <circle cx="66" cy="60" r="16" fill="none" stroke="#3B82F6" stroke-width="2"/>
+    <path d="M60 60 l4 5 l9 -11" stroke="#3B82F6" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="94" y="56" font-size="10" letter-spacing="2" fill="#8B93A1">HACKATHON</text>
+    <text x="50" y="98" font-size="15" font-weight="800" fill="#F5F7FA">XPHERIA 2026</text>
+    <text x="50" y="118" font-size="11.5" fill="#5B9BFB">1st Place — UI/UX</text>
+    <text x="50" y="138" font-size="10.5" fill="#4B5262">Design &amp; product execution</text>
+
+    <!-- Badge 2 -->
+    <rect x="315" y="24" width="270" height="132" rx="12" fill="#0B0D10" stroke="#242832"/>
+    <circle cx="351" cy="60" r="16" fill="none" stroke="#EF4444" stroke-width="2"/>
+    <path d="M351 51 v10 M347 57 h8" stroke="#EF4444" stroke-width="2.2" stroke-linecap="round"/>
+    <text x="379" y="56" font-size="10" letter-spacing="2" fill="#8B93A1">HEALTH TECH</text>
+    <text x="335" y="98" font-size="15" font-weight="800" fill="#F5F7FA">PROTONEX</text>
+    <text x="335" y="118" font-size="11.5" fill="#FB7185">3rd Place — CareAI</text>
+    <text x="335" y="138" font-size="10.5" fill="#4B5262">AI-assisted patient care</text>
+
+    <!-- Badge 3 -->
+    <rect x="600" y="24" width="270" height="132" rx="12" fill="#0B0D10" stroke="#22D3EE" stroke-width="1.3"/>
+    <circle cx="636" cy="60" r="16" fill="none" stroke="#22D3EE" stroke-width="2"/>
+    <circle cx="636" cy="60" r="5" fill="#22D3EE"/>
+    <text x="664" y="56" font-size="10" letter-spacing="2" fill="#8B93A1">AI AGENT BUILDER</text>
+    <text x="620" y="98" font-size="15" font-weight="800" fill="#F5F7FA">GRAND FINALE</text>
+    <text x="620" y="118" font-size="11.5" fill="#22D3EE">MedAssist-AI · Google Office, BLR</text>
+    <text x="620" y="138" font-size="10.5" fill="#4B5262">AI Agent Builder Series 2026</text>
+
+    <!-- Badge 4 -->
+    <rect x="885" y="24" width="285" height="132" rx="12" fill="#0B0D10" stroke="#242832"/>
+    <circle cx="921" cy="60" r="16" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+    <path d="M913 60 h16 M921 52 v16" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"/>
+    <text x="949" y="56" font-size="10" letter-spacing="2" fill="#8B93A1">COMMUNITY</text>
+    <text x="905" y="98" font-size="15" font-weight="800" fill="#F5F7FA">TOP 25 VOLUNTEER</text>
+    <text x="905" y="118" font-size="11.5" fill="#B79CFF">AI Agent Builder Series 2026</text>
+    <text x="905" y="138" font-size="10.5" fill="#4B5262">Recognized contributor</text>
+  </g>
+</svg>

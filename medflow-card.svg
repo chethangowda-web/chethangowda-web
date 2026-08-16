@@ -1,0 +1,72 @@
+<svg viewBox="0 0 580 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="mfGlow" cx="50%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridMf" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#12151B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="580" height="380" fill="#050505"/>
+  <rect width="580" height="380" fill="url(#gridMf)"/>
+  <rect width="580" height="380" fill="url(#mfGlow)"/>
+  <rect x="0.5" y="0.5" width="579" height="379" fill="none" stroke="#242832" rx="16"/>
+
+  <text x="24" y="34" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="4" fill="#8B93A1">SELECTED WORK / 03</text>
+  <text x="24" y="58" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#F5F7FA">MEDFLOW AI</text>
+
+  <g stroke="#242832" stroke-width="1">
+    <line x1="290" y1="220" x2="290" y2="90"/>
+    <line x1="290" y1="220" x2="382" y2="128"/>
+    <line x1="290" y1="220" x2="420" y2="220"/>
+    <line x1="290" y1="220" x2="382" y2="312"/>
+    <line x1="290" y1="220" x2="290" y2="350"/>
+    <line x1="290" y1="220" x2="198" y2="312"/>
+    <line x1="290" y1="220" x2="160" y2="220"/>
+    <line x1="290" y1="220" x2="198" y2="128"/>
+  </g>
+
+  <!-- central orchestration node -->
+  <circle cx="290" cy="220" r="34" fill="#0B0D10" stroke="#22D3EE" stroke-width="2.2"/>
+  <text x="290" y="217" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" fill="#22D3EE">ORCHES-</text>
+  <text x="290" y="229" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10.5" font-weight="800" fill="#22D3EE">TRATOR</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#C9D3E0">
+    <circle cx="290" cy="90" r="6" fill="#0B0D10" stroke="#3B82F6" stroke-width="2"/>
+    <text x="290" y="78" text-anchor="middle">INTAKE</text>
+
+    <circle cx="382" cy="128" r="6" fill="#0B0D10" stroke="#3B82F6" stroke-width="2"/>
+    <text x="396" y="122" text-anchor="start">HISTORY</text>
+
+    <circle cx="420" cy="220" r="6" fill="#0B0D10" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="434" y="224" text-anchor="start">RISK</text>
+
+    <circle cx="382" cy="312" r="6" fill="#0B0D10" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="396" y="322" text-anchor="start">LABS</text>
+
+    <circle cx="290" cy="350" r="6" fill="#0B0D10" stroke="#22D3EE" stroke-width="2"/>
+    <text x="290" y="367" text-anchor="middle">TREATMENT</text>
+
+    <circle cx="198" cy="312" r="6" fill="#0B0D10" stroke="#22D3EE" stroke-width="2"/>
+    <text x="184" y="322" text-anchor="end">MEDICATION</text>
+
+    <circle cx="160" cy="220" r="6" fill="#0B0D10" stroke="#3B82F6" stroke-width="2"/>
+    <text x="146" y="224" text-anchor="end">DISCHARGE</text>
+
+    <circle cx="198" cy="128" r="6" fill="#0B0D10" stroke="#3B82F6" stroke-width="2"/>
+    <text x="184" y="122" text-anchor="end">FOLLOW-UP</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="600" fill="#8B93A1">
+    <rect x="24" y="332" width="66" height="24" rx="12" fill="#11141A" stroke="#242832"/>
+    <text x="57" y="348" text-anchor="middle">Gemini</text>
+    <rect x="98" y="332" width="54" height="24" rx="12" fill="#11141A" stroke="#242832"/>
+    <text x="125" y="348" text-anchor="middle">RAG</text>
+    <rect x="160" y="332" width="54" height="24" rx="12" fill="#11141A" stroke="#242832"/>
+    <text x="187" y="348" text-anchor="middle">MCP</text>
+    <rect x="222" y="332" width="106" height="24" rx="12" fill="#11141A" stroke="#242832"/>
+    <text x="275" y="348" text-anchor="middle">Multi-Agent</text>
+  </g>
+</svg>
