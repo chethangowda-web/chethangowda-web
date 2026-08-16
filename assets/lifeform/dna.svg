@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" width="900" height="1300" font-family="Consolas,'Courier New',monospace">
+  <defs>
+    <radialGradient id="bgVign" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#07100E"/>
+      <stop offset="55%" stop-color="#03080A"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <linearGradient id="strandA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="strandB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <linearGradient id="rungGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00FFA3" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <symbol id="sgem" viewBox="-9 -9 18 18">
+      <path d="M0,-7 L6,0 L0,7 L-6,0 Z" fill="rgba(0,255,163,0.10)" stroke="#00FFA3" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="2" fill="#00FFA3"/>
+    </symbol>
+    <symbol id="smut" viewBox="-8 -8 16 16">
+      <rect x="-5.5" y="-5.5" width="11" height="11" transform="rotate(45)" fill="rgba(0,229,255,0.08)" stroke="#00E5FF" stroke-width="1"/>
+      <circle cx="0" cy="0" r="1.6" fill="#00E5FF"/>
+    </symbol>
+    <symbol id="sdot" viewBox="-3 -3 6 6">
+      <circle r="2.6" fill="#7C3AED"/>
+    </symbol>
+  </defs>
+
+  <rect width="900" height="1300" fill="url(#bgVign)"/>
+  <g stroke="#596275" stroke-width="1" opacity="0.35">
+    <path d="M25 25 H60 M25 25 V60"/>
+    <path d="M875 25 H840 M875 25 V60"/>
+  </g>
+
+  <text x="450" y="70" text-anchor="middle" font-size="22" fill="#00FFA3" letter-spacing="5">ENGINEERING DNA</text>
+  <text x="450" y="96" text-anchor="middle" font-size="12" fill="#8B96AE" letter-spacing="3">FOUNDATION LANGUAGES AS GENETIC MARKERS</text>
+
+  <!-- ============ DOUBLE HELIX ============ -->
+  <!-- strand 1 -->
+  <path d="M 380 150 C 380 250 520 250 520 350 C 520 450 380 450 380 550 C 380 650 520 650 520 750 C 520 850 380 850 380 950 C 380 1050 520 1050 520 1150 C 520 1250 380 1250 380 1300"
+    fill="none" stroke="url(#strandA)" stroke-width="3.5" filter="url(#glowCyan)" opacity="0.9"/>
+  <!-- strand 2 -->
+  <path d="M 520 150 C 520 250 380 250 380 350 C 380 450 520 450 520 550 C 520 650 380 650 380 750 C 380 850 520 850 520 950 C 520 1050 380 1050 380 1150 C 380 1250 520 1250 520 1300"
+    fill="none" stroke="url(#strandB)" stroke-width="3.5" filter="url(#glowCyan)" opacity="0.9"/>
+
+  <!-- rungs -->
+  <g stroke="url(#rungGrad)" stroke-width="1.2">
+    <line x1="380" y1="350" x2="520" y2="350"/>
+    <line x1="380" y1="550" x2="520" y2="550"/>
+    <line x1="380" y1="750" x2="520" y2="750"/>
+    <line x1="380" y1="950" x2="520" y2="950"/>
+    <line x1="380" y1="1150" x2="520" y2="1150"/>
+  </g>
+  <g stroke="#00E5FF" stroke-width="0.8" opacity="0.4">
+    <line x1="380" y1="250" x2="520" y2="250"/>
+    <line x1="380" y1="450" x2="520" y2="450"/>
+    <line x1="380" y1="650" x2="520" y2="650"/>
+    <line x1="380" y1="850" x2="520" y2="850"/>
+    <line x1="380" y1="1050" x2="520" y2="1050"/>
+  </g>
+
+  <!-- axis -->
+  <line x1="450" y1="150" x2="450" y2="1300" stroke="#596275" stroke-width="0.8" stroke-dasharray="4 8" opacity="0.5"/>
+
+  <!-- ============ GENE MARKERS (foundation) ============ -->
+  <g font-size="16" fill="#FFFFFF" letter-spacing="2">
+    <use href="#sgem" x="520" y="250"/><text x="548" y="256">JAVA</text>
+    <use href="#sgem" x="380" y="450"/><text x="306" y="456" text-anchor="end">PYTHON</text>
+    <use href="#sgem" x="520" y="650"/><text x="548" y="656">JAVASCRIPT</text>
+    <use href="#sgem" x="380" y="850"/><text x="306" y="856" text-anchor="end">TYPESCRIPT</text>
+    <use href="#sgem" x="520" y="1050"/><text x="548" y="1056">SQL</text>
+  </g>
+
+  <!-- ============ MUTATIONS (branching stack) ============ -->
+  <g font-size="12" fill="#00E5FF" letter-spacing="1">
+    <use href="#smut" x="600" y="160"/><text x="616" y="164">REACT</text>
+    <use href="#smut" x="260" y="200"/><text x="206" y="204" text-anchor="end">NODE</text>
+    <use href="#smut" x="600" y="360"/><text x="616" y="364">FASTAPI</text>
+    <use href="#smut" x="260" y="400"/><text x="206" y="404" text-anchor="end">POSTGRESQL</text>
+    <use href="#smut" x="600" y="560"/><text x="616" y="564">AI</text>
+    <use href="#smut" x="260" y="600"/><text x="206" y="604" text-anchor="end">RAG</text>
+    <use href="#smut" x="600" y="760"/><text x="616" y="764">AGENTS</text>
+    <use href="#smut" x="260" y="800"/><text x="206" y="804" text-anchor="end">DOCKER</text>
+    <use href="#smut" x="600" y="960"/><text x="616" y="964">KUBERNETES</text>
+    <use href="#smut" x="260" y="1000"/><text x="206" y="1004" text-anchor="end">VECTOR SEARCH</text>
+  </g>
+
+  <!-- connecting lines from mutations to helix -->
+  <g stroke="#00E5FF" stroke-width="0.5" opacity="0.3">
+    <line x1="600" y1="160" x2="580" y2="190"/>
+    <line x1="260" y1="200" x2="330" y2="230"/>
+    <line x1="600" y1="360" x2="570" y2="390"/>
+    <line x1="260" y1="400" x2="340" y2="420"/>
+    <line x1="600" y1="560" x2="540" y2="560"/>
+    <line x1="260" y1="600" x2="340" y2="600"/>
+    <line x1="600" y1="760" x2="540" y2="760"/>
+    <line x1="260" y1="800" x2="340" y2="800"/>
+    <line x1="600" y1="960" x2="540" y2="960"/>
+    <line x1="260" y1="1000" x2="340" y2="1000"/>
+  </g>
+
+  <!-- subtle particles along helix -->
+  <g>
+    <circle r="2.4" fill="#00FFA3" filter="url(#glowGreen)">
+      <animateMotion dur="3.5s" repeatCount="indefinite" path="M 380 150 C 380 250 520 250 520 350 C 520 450 380 450 380 550 C 380 650 520 650 520 750 C 520 850 380 850 380 950 C 380 1050 520 1050 520 1150 C 520 1250 380 1250 380 1300"/>
+    </circle>
+  </g>
+  <g>
+    <circle r="2" fill="#00E5FF">
+      <animateMotion dur="4.2s" repeatCount="indefinite" path="M 520 150 C 520 250 380 250 380 350 C 380 450 520 450 520 550 C 520 650 380 650 380 750 C 380 850 520 850 520 950 C 520 1050 380 1050 380 1150 C 380 1250 520 1250 520 1300"/>
+    </circle>
+  </g>
+
+  <!-- concept -->
+  <g font-size="12" fill="#8B96AE" letter-spacing="1">
+    <text x="450" y="1260" text-anchor="middle">TECHNOLOGIES ARE NOT A LIST — THEY ARE PART OF THE ORGANISM'S DNA</text>
+  </g>
+</svg>

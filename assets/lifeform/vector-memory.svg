@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" font-family="Consolas,'Courier New',monospace">
+  <defs>
+    <radialGradient id="bgVign" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#100A22"/>
+      <stop offset="55%" stop-color="#06040F"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <radialGradient id="pointGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B026FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#B026FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vecGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#B026FF"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+
+    <filter id="glowMagenta" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="620" fill="url(#bgVign)"/>
+  <g stroke="#B026FF" stroke-width="0.5" fill="none" opacity="0.08">
+    <circle cx="450" cy="320" r="140"/><circle cx="450" cy="320" r="210"/>
+    <circle cx="450" cy="320" r="280"/>
+  </g>
+  <g stroke="#596275" stroke-width="1" opacity="0.35">
+    <path d="M25 25 H60 M25 25 V60"/>
+    <path d="M875 25 H840 M875 25 V60"/>
+  </g>
+
+  <text x="450" y="60" text-anchor="middle" font-size="22" fill="#B026FF" letter-spacing="5">VECTOR MEMORY</text>
+  <text x="450" y="86" text-anchor="middle" font-size="12" fill="#8B96AE" letter-spacing="3">EMBEDDINGS · SEMANTIC RELATIONSHIPS · SIMILARITY · RAG</text>
+
+  <!-- chamber -->
+  <polygon points="450,120 620,210 620,430 450,520 280,430 280,210" fill="rgba(176,38,255,0.04)" stroke="#B026FF" stroke-width="1.4"/>
+  <g stroke="#B026FF" stroke-width="0.6" opacity="0.5">
+    <line x1="450" y1="120" x2="450" y2="520"/>
+    <line x1="280" y1="210" x2="620" y2="430"/>
+    <line x1="620" y1="210" x2="280" y2="430"/>
+  </g>
+
+  <!-- similarity arcs -->
+  <g stroke="#B026FF" stroke-width="0.8" fill="none" opacity="0.5">
+    <path d="M350 260 Q 450 200 550 260"/>
+    <path d="M350 380 Q 450 440 550 380"/>
+    <path d="M320 320 Q 450 260 580 320"/>
+    <path d="M400 210 Q 450 300 400 430"/>
+    <path d="M500 210 Q 450 300 500 430"/>
+  </g>
+
+  <!-- query beam -->
+  <path d="M450 560 C 450 520 450 480 450 440" fill="none" stroke="#00E5FF" stroke-width="1.4" stroke-dasharray="4 6" opacity="0.6"/>
+  <circle r="2.5" fill="#00E5FF" filter="url(#glowMagenta)">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M450 560 C 450 520 450 480 450 440"/>
+  </circle>
+
+  <!-- vector point cluster -->
+  <g>
+    <circle cx="450" cy="320" r="90" fill="url(#pointGlow)"/>
+    <g fill="#B026FF">
+      <circle cx="420" cy="280" r="4"/><circle cx="470" cy="270" r="3.2"/>
+      <circle cx="500" cy="310" r="3.8"/><circle cx="450" cy="340" r="4"/>
+      <circle cx="410" cy="350" r="3"/><circle cx="520" cy="350" r="3"/>
+      <circle cx="480" cy="300" r="2.6"/><circle cx="440" cy="300" r="3.4"/>
+      <circle cx="460" cy="360" r="2.6"/><circle cx="390" cy="310" r="2.6"/>
+      <circle cx="510" cy="280" r="2.2"/><circle cx="430" cy="380" r="2.4"/>
+    </g>
+    <!-- glowing anchor points -->
+    <circle cx="450" cy="320" r="6" fill="#FFFFFF" filter="url(#glowMagenta)">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="470" cy="270" r="5" fill="#00E5FF" filter="url(#glowGreen)">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- connection lines to anchor -->
+  <g stroke="#B026FF" stroke-width="0.6" fill="none" opacity="0.5">
+    <line x1="450" y1="320" x2="420" y2="280"/>
+    <line x1="450" y1="320" x2="500" y2="310"/>
+    <line x1="450" y1="320" x2="450" y2="340"/>
+    <line x1="450" y1="320" x2="520" y2="350"/>
+    <line x1="450" y1="320" x2="410" y2="350"/>
+    <line x1="450" y1="320" x2="480" y2="300"/>
+    <line x1="450" y1="320" x2="440" y2="300"/>
+  </g>
+
+  <!-- query label -->
+  <g font-size="12" fill="#8B96AE" letter-spacing="2">
+    <text x="450" y="588" text-anchor="middle" fill="#00E5FF">QUERY → EMBEDDING → SIMILARITY SEARCH</text>
+  </g>
+
+  <!-- side tags -->
+  <g font-size="11" fill="#8B96AE" letter-spacing="1">
+    <text x="60" y="560">RAG CHAMBER</text>
+    <text x="840" y="560" text-anchor="end">QDRANT / EMBEDDINGS</text>
+  </g>
+
+  <!-- scale -->
+  <g stroke="#596275" stroke-width="0.6" opacity="0.5">
+    <line x1="60" y1="540" x2="120" y2="540"/>
+    <line x1="60" y1="540" x2="60" y2="545"/>
+    <line x1="120" y1="540" x2="120" y2="545"/>
+  </g>
+</svg>

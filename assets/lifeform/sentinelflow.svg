@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" width="1100" height="700" font-family="Consolas,'Courier New',monospace">
+  <defs>
+    <radialGradient id="bgVign" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#190A12"/>
+      <stop offset="55%" stop-color="#0A0408"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <linearGradient id="alertGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF4D6D"/>
+      <stop offset="100%" stop-color="#B026FF"/>
+    </linearGradient>
+    <radialGradient id="eventGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF4D6D" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FF4D6D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="aiGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B026FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#B026FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowRed" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowMagenta" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowWhite" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <symbol id="snodeR" viewBox="-12 -12 24 24">
+      <circle r="11" fill="none" stroke="#FF4D6D" stroke-width="1" opacity="0.5"/>
+      <circle r="5" fill="#FF4D6D"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="snodeV" viewBox="-12 -12 24 24">
+      <circle r="11" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.5"/>
+      <circle r="5" fill="#B026FF"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    </symbol>
+  </defs>
+
+  <rect width="1100" height="700" fill="url(#bgVign)"/>
+  <g stroke="#FF4D6D" stroke-width="0.5" fill="none" opacity="0.06">
+    <circle cx="550" cy="350" r="180"/><circle cx="550" cy="350" r="260"/>
+    <circle cx="550" cy="350" r="340"/>
+  </g>
+  <g stroke="#596275" stroke-width="1" opacity="0.35">
+    <path d="M25 25 H60 M25 25 V60"/>
+    <path d="M1075 25 H1040 M1075 25 V60"/>
+  </g>
+
+  <text x="550" y="55" text-anchor="middle" font-size="24" fill="#FF4D6D" letter-spacing="5">SENTINELFLOW AI</text>
+  <text x="550" y="80" text-anchor="middle" font-size="12" fill="#8B96AE" letter-spacing="3">SPECIALIZED ORGAN 02 — AI INCIDENT RESPONSE &amp; POST-MORTEM AGENT</text>
+
+  <!-- organ body -->
+  <ellipse cx="550" cy="360" rx="460" ry="230" fill="rgba(255,77,109,0.03)" stroke="#FF4D6D" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+
+  <!-- event stream -->
+  <g>
+    <path d="M80 160 Q 300 120 520 160 T 980 160" fill="none" stroke="#FF4D6D" stroke-width="1.4" opacity="0.5"/>
+    <path d="M80 180 Q 300 140 520 180 T 980 180" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.4"/>
+    <g fill="#FF4D6D">
+      <circle cx="180" cy="150" r="2.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite"/></circle>
+      <circle cx="420" cy="140" r="2.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle>
+      <circle cx="640" cy="165" r="2.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="150" r="2.5"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></circle>
+    </g>
+    <text x="80" y="130" font-size="11" fill="#8B96AE" letter-spacing="2">EVENT STREAM</text>
+  </g>
+
+  <!-- pipeline: event -> detection -> reasoning -> response -> post-mortem -->
+  <g>
+    <g stroke="url(#alertGrad)" stroke-width="2" fill="none" opacity="0.7">
+      <path d="M180 300 L330 300"/>
+      <path d="M440 300 L520 330"/>
+      <path d="M520 330 L440 360"/>
+      <path d="M330 360 L180 360"/>
+      <path d="M440 300 C 490 300 490 390 540 390 L640 390"/>
+      <path d="M760 390 C 830 390 860 330 900 280"/>
+    </g>
+    <g>
+      <circle r="3" fill="#FF4D6D" filter="url(#glowRed)"><animateMotion dur="1.5s" repeatCount="indefinite" path="M180 300 L330 300"/></circle>
+      <circle r="3" fill="#B026FF" filter="url(#glowMagenta)"><animateMotion dur="1.5s" repeatCount="indefinite" path="M440 300 L520 330"/></circle>
+      <circle r="3" fill="#B026FF"><animateMotion dur="1.5s" repeatCount="indefinite" path="M520 330 L440 360"/></circle>
+      <circle r="2.6" fill="#FF4D6D"><animateMotion dur="2s" repeatCount="indefinite" path="M330 360 L180 360"/></circle>
+      <circle r="3" fill="#FFFFFF" filter="url(#glowWhite)"><animateMotion dur="1.8s" repeatCount="indefinite" path="M440 300 C 490 300 490 390 540 390 L640 390"/></circle>
+    </g>
+
+    <use href="#snodeR" x="180" y="300"/><text x="180" y="280" text-anchor="middle" font-size="12" fill="#FF4D6D" letter-spacing="1">EVENT</text>
+    <use href="#snodeR" x="330" y="300"/><text x="330" y="280" text-anchor="middle" font-size="12" fill="#FF4D6D" letter-spacing="1">DETECTION</text>
+    <use href="#snodeV" x="520" y="330"/><text x="520" y="310" text-anchor="middle" font-size="12" fill="#B026FF" letter-spacing="1">REASONING</text>
+    <use href="#snodeV" x="330" y="360"/><text x="330" y="380" text-anchor="middle" font-size="12" fill="#B026FF" letter-spacing="1">RESPONSE</text>
+    <use href="#snodeV" x="640" y="390"/><text x="640" y="370" text-anchor="middle" font-size="12" fill="#B026FF" letter-spacing="1">POST-MORTEM</text>
+  </g>
+
+  <!-- signal wave monitor -->
+  <g>
+    <path d="M900 280 Q 920 250 940 280 T 980 280 T 1020 280" fill="none" stroke="#FF4D6D" stroke-width="1.5" filter="url(#glowRed)"/>
+    <path d="M900 300 Q 920 270 940 300 T 980 300 T 1020 300" fill="none" stroke="#FF4D6D" stroke-width="1" opacity="0.5"/>
+    <text x="960" y="240" text-anchor="middle" font-size="11" fill="#8B96AE" letter-spacing="2">WARNING PULSE</text>
+  </g>
+
+  <!-- AI reasoning core -->
+  <g>
+    <circle cx="640" cy="390" r="34" fill="url(#aiGlow)"/>
+    <circle cx="640" cy="390" r="22" fill="none" stroke="#B026FF" stroke-width="1" stroke-dasharray="3 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 640 390" to="360 640 390" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="390" r="8" fill="#B026FF" filter="url(#glowMagenta)">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="640" y="440" text-anchor="middle" font-size="11" fill="#8B96AE" letter-spacing="1">AI REASONING</text>
+  </g>
+
+  <!-- tech base -->
+  <g>
+    <rect x="380" y="500" width="340" height="50" rx="8" fill="rgba(255,77,109,0.04)" stroke="#596275" stroke-width="0.8"/>
+    <g font-size="13" fill="#00E5FF" letter-spacing="1">
+      <text x="440" y="514">TYPESCRIPT</text><text x="552" y="514">NODE.JS</text><text x="642" y="514">MASTRA</text>
+      <text x="474" y="540">GROQ</text>
+    </g>
+  </g>
+
+  <g font-size="11" fill="#8B96AE" letter-spacing="1">
+    <text x="60" y="680">STATUS: INCIDENT-RESPONSE ORGAN</text>
+    <text x="1040" y="680" text-anchor="end">SECURITY / POST-MORTEM AUTOMATION</text>
+  </g>
+</svg>

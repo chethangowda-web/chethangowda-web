@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 1900" width="700" height="1900" font-family="Consolas,'Courier New',monospace">
+  <defs>
+    <radialGradient id="bgVign" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#070A14"/>
+      <stop offset="50%" stop-color="#030409"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#D6F8FF"/>
+      <stop offset="60%" stop-color="#00E5FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="reactor" cx="42%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#AEF2FF"/>
+      <stop offset="70%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </radialGradient>
+    <linearGradient id="memGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00FFA3"/>
+      <stop offset="100%" stop-color="#00C2FF"/>
+    </linearGradient>
+    <radialGradient id="memGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00FFA3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cortexGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#B026FF"/>
+    </linearGradient>
+    <linearGradient id="strandA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="strandB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#00E5FF"/>
+    </linearGradient>
+    <linearGradient id="membraneGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.10"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#B026FF" stop-opacity="0.10"/>
+    </linearGradient>
+    <radialGradient id="agentGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B026FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#B026FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowWhite" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowMagenta" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowGreen" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowViolet" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <symbol id="snode" viewBox="-10 -10 20 20">
+      <circle r="9" fill="none" stroke="#00E5FF" stroke-width="1" opacity="0.5"/>
+      <circle r="4" fill="#00E5FF"><animate attributeName="opacity" values="1;0.25;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="snodeV" viewBox="-10 -10 20 20">
+      <circle r="9" fill="none" stroke="#7C3AED" stroke-width="1" opacity="0.5"/>
+      <circle r="4" fill="#B026FF"><animate attributeName="opacity" values="1;0.25;1" dur="3.1s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="snodeG" viewBox="-10 -10 20 20">
+      <circle r="9" fill="none" stroke="#00FFA3" stroke-width="1" opacity="0.5"/>
+      <circle r="4" fill="#00FFA3"><animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="shex" viewBox="-16 -18 32 36">
+      <circle cx="0" cy="0" r="26" fill="url(#agentGlow)"/>
+      <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="rgba(176,38,255,0.08)" stroke="#B026FF" stroke-width="1.3"/>
+      <circle cx="0" cy="0" r="3" fill="#00E5FF"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="sgem" viewBox="-8 -8 16 16">
+      <path d="M0,-6 L5.5,0 L0,6 L-5.5,0 Z" fill="rgba(0,255,163,0.10)" stroke="#00FFA3" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="1.8" fill="#00FFA3"/>
+    </symbol>
+  </defs>
+
+  <rect width="700" height="1900" fill="url(#bgVign)"/>
+  <g stroke="#00E5FF" stroke-width="0.5" fill="none" opacity="0.06">
+    <circle cx="350" cy="820" r="110"/><circle cx="350" cy="820" r="170"/>
+    <circle cx="350" cy="820" r="240"/><circle cx="350" cy="820" r="310"/>
+  </g>
+  <g stroke="#596275" stroke-width="1" opacity="0.35">
+    <path d="M25 25 H60 M25 25 V60"/>
+    <path d="M675 25 H640 M675 25 V60"/>
+  </g>
+
+  <!-- DNA helix -->
+  <g opacity="0.4">
+    <path d="M 270 140 C 270 220 430 220 430 300 C 430 380 270 380 270 460 C 270 540 430 540 430 620 C 430 700 270 700 270 780"
+      fill="none" stroke="url(#strandA)" stroke-width="2.5" filter="url(#glowCyan)"/>
+    <path d="M 430 140 C 430 220 270 220 270 300 C 270 380 430 380 430 460 C 430 540 270 540 270 620 C 270 700 430 700 430 780"
+      fill="none" stroke="url(#strandB)" stroke-width="2.5" filter="url(#glowViolet)"/>
+  </g>
+  <g stroke="#596275" stroke-width="1" opacity="0.5">
+    <line x1="270" y1="300" x2="430" y2="300"/>
+    <line x1="270" y1="460" x2="430" y2="460"/>
+    <line x1="270" y1="620" x2="430" y2="620"/>
+  </g>
+  <g font-size="13" fill="#00FFA3">
+    <use href="#sgem" x="430" y="220"/><text x="448" y="225">JAVA</text>
+    <use href="#sgem" x="270" y="380"/><text x="248" y="385" text-anchor="end">PYTHON</text>
+    <use href="#sgem" x="430" y="540"/><text x="448" y="545">TYPESCRIPT</text>
+  </g>
+
+  <!-- Interface membrane -->
+  <ellipse cx="350" cy="950" rx="320" ry="760" fill="url(#membraneGrad)" stroke="#7C3AED" stroke-width="1.2" stroke-dasharray="3 10" opacity="0.8"/>
+  <g stroke="#596275" stroke-width="0.6" opacity="0.35">
+    <line x1="40" y1="950" x2="660" y2="950"/>
+    <line x1="350" y1="190" x2="350" y2="1710"/>
+  </g>
+  <g font-size="12" fill="#00E5FF" letter-spacing="1">
+    <use href="#snodeV" x="350" y="205"/><text x="370" y="209">REACT</text>
+    <use href="#snodeV" x="645" y="900"/><text x="620" y="904" text-anchor="end">NEXT.JS</text>
+    <use href="#snodeV" x="350" y="1700"/><text x="370" y="1704">TYPESCRIPT</text>
+    <use href="#snodeV" x="55" y="950"/><text x="34" y="954" text-anchor="end">TAILWIND</text>
+  </g>
+  <g font-size="15" fill="#B026FF">
+    <text x="350" y="180" text-anchor="middle" letter-spacing="3">INTERFACE SYSTEM</text>
+  </g>
+
+  <!-- Neural cortex -->
+  <g>
+    <ellipse cx="350" cy="330" rx="200" ry="80" fill="url(#cortexGrad)" opacity="0.06"/>
+    <g stroke="#7C3AED" stroke-width="1" fill="none" opacity="0.55">
+      <path d="M350 400 C 350 440 350 500 350 620" stroke-dasharray="4 6"/>
+      <path d="M230 310 C 280 370 320 410 345 500"/>
+      <path d="M470 310 C 420 370 380 410 355 500"/>
+    </g>
+    <g stroke="#B026FF" stroke-width="0.8" fill="none" opacity="0.4">
+      <path d="M170 250 L230 310 M230 310 L300 280 M300 280 L350 330"/>
+      <path d="M530 250 L470 310 M470 310 L400 280 M400 280 L350 330"/>
+    </g>
+    <use href="#shex" x="170" y="250"/>
+    <use href="#shex" x="230" y="310"/>
+    <use href="#shex" x="300" y="280"/>
+    <use href="#shex" x="400" y="280"/>
+    <use href="#shex" x="470" y="310"/>
+    <use href="#shex" x="530" y="250"/>
+    <g font-size="12" fill="#B026FF" letter-spacing="1">
+      <text x="170" y="232" text-anchor="middle">GEMINI</text>
+      <text x="230" y="292" text-anchor="middle">GROQ</text>
+      <text x="300" y="262" text-anchor="middle">MCP</text>
+      <text x="400" y="262" text-anchor="middle">A2A</text>
+      <text x="470" y="292" text-anchor="middle">ADK</text>
+      <text x="530" y="232" text-anchor="middle">MASTRA</text>
+    </g>
+    <use href="#snodeV" x="350" y="400"/>
+    <circle cx="350" cy="400" r="16" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" values="12;20;12" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <g font-size="15" fill="#B026FF">
+      <text x="350" y="120" text-anchor="middle" letter-spacing="3">NEURAL CORTEX</text>
+      <text x="350" y="140" text-anchor="middle" font-size="11" fill="#8B96AE" letter-spacing="2">LLMS · RAG · MULTI-AGENT</text>
+    </g>
+  </g>
+
+  <!-- axon -->
+  <path d="M350 410 C 350 490 350 560 350 640" fill="none" stroke="url(#cortexGrad)" stroke-width="2.5" filter="url(#glowMagenta)"/>
+  <circle r="3" fill="#B026FF" filter="url(#glowMagenta)">
+    <animateMotion dur="2.4s" repeatCount="indefinite" path="M350 410 C 350 490 350 560 350 640"/>
+  </circle>
+
+  <!-- CORE -->
+  <g>
+    <circle cx="350" cy="820" r="170" fill="url(#coreGlow)" filter="url(#glowWhite)"/>
+    <circle cx="350" cy="820" r="150" fill="none" stroke="#00E5FF" stroke-width="1.2" stroke-dasharray="10 22" opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate" from="0 350 820" to="360 350 820" dur="40s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="820" r="130" fill="none" stroke="#7C3AED" stroke-width="1" stroke-dasharray="4 16" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0 350 820" to="-360 350 820" dur="26s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="820" r="92" fill="url(#reactor)"/>
+    <circle cx="350" cy="820" r="92" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+    <circle cx="350" cy="820" r="12" fill="#FFFFFF" filter="url(#glowWhite)">
+      <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <g text-anchor="middle" font-family="Consolas,'Courier New',monospace">
+      <text x="350" y="788" fill="#FFFFFF" font-size="17" letter-spacing="2">CHETHAN GOWDA</text>
+      <text x="350" y="842" fill="#00E5FF" font-size="13" letter-spacing="3">FULL-STACK</text>
+      <text x="350" y="862" fill="#B026FF" font-size="13" letter-spacing="3">AI</text>
+      <text x="350" y="882" fill="#7C3AED" font-size="13" letter-spacing="3">BACKEND</text>
+      <text x="350" y="902" fill="#00FFA3" font-size="13" letter-spacing="3">SYSTEMS</text>
+    </g>
+    <g font-size="15" fill="#00E5FF">
+      <text x="350" y="645" text-anchor="middle" letter-spacing="3">ENGINEERING CORE</text>
+    </g>
+  </g>
+
+  <!-- MEMORY -->
+  <g>
+    <circle cx="350" cy="1180" r="110" fill="url(#memGlow)"/>
+    <g fill="rgba(0,255,163,0.06)" stroke="url(#memGrad)" stroke-width="1.2">
+      <polygon points="350,1090 410,1145 350,1210 280,1145"/>
+      <polygon points="350,1130 390,1175 350,1220 305,1175"/>
+    </g>
+    <g fill="none" stroke="#00FFA3" stroke-width="0.8" opacity="0.5">
+      <line x1="310" y1="1095" x2="395" y2="1180"/>
+      <line x1="395" y1="1095" x2="310" y2="1180"/>
+    </g>
+    <path d="M280 1160 C 240 1160 230 1190 240 1230" fill="none" stroke="#00FFA3" stroke-width="1" stroke-dasharray="3 6" opacity="0.5"/>
+    <path d="M420 1160 C 460 1160 470 1190 460 1230" fill="none" stroke="#00FFA3" stroke-width="1" stroke-dasharray="3 6" opacity="0.5"/>
+    <g font-size="12" fill="#00FFA3" letter-spacing="1">
+      <text x="350" y="1252" text-anchor="middle">POSTGRESQL · MONGO · MYSQL</text>
+      <text x="350" y="1270" text-anchor="middle">REDIS · QDRANT</text>
+    </g>
+    <g font-size="15" fill="#00FFA3">
+      <text x="350" y="1058" text-anchor="middle" letter-spacing="3">MEMORY CORE</text>
+    </g>
+    <!-- vector memory -->
+    <polygon points="440,1090 475,1120 465,1160 425,1170 395,1140 405,1100" fill="rgba(176,38,255,0.05)" stroke="#B026FF" stroke-width="1" stroke-dasharray="3 4"/>
+    <g fill="#B026FF">
+      <circle cx="430" cy="1125" r="2"/><circle cx="450" cy="1115" r="2.4"/>
+      <circle cx="445" cy="1150" r="2"/><circle cx="420" cy="1155" r="2.4"/>
+    </g>
+    <g font-size="11" fill="#B026FF" letter-spacing="1">
+      <text x="435" y="1182" text-anchor="middle">VECTOR</text>
+      <text x="435" y="1196" text-anchor="middle">MEMORY</text>
+    </g>
+  </g>
+
+  <!-- EXECUTION -->
+  <g>
+    <g fill="none" stroke="#00E5FF" stroke-width="1.2" opacity="0.55">
+      <path d="M420 900 C 480 940 520 980 570 1030"/>
+      <path d="M430 940 C 490 980 530 1020 570 1070"/>
+    </g>
+    <g>
+      <circle r="2.6" fill="#00E5FF" filter="url(#glowCyan)">
+        <animateMotion dur="2.2s" repeatCount="indefinite" path="M420 900 C 480 940 520 980 570 1030"/>
+      </circle>
+      <circle r="2.2" fill="#00E5FF">
+        <animateMotion dur="2.8s" repeatCount="indefinite" path="M430 940 C 490 980 530 1020 570 1070"/>
+      </circle>
+    </g>
+    <use href="#snode" x="570" y="1030"/>
+    <use href="#snode" x="570" y="1070"/>
+    <g font-size="12" fill="#00E5FF" letter-spacing="1">
+      <text x="570" y="1012" text-anchor="middle">NODE.JS</text>
+      <text x="570" y="1052" text-anchor="middle">FASTAPI</text>
+    </g>
+    <g font-size="15" fill="#00E5FF">
+      <text x="500" y="896" text-anchor="middle" letter-spacing="3">EXECUTION</text>
+    </g>
+  </g>
+
+  <!-- INFRASTRUCTURE -->
+  <g>
+    <g fill="none" stroke="#596275" stroke-width="2" opacity="0.7">
+      <path d="M 220 1700 C 260 1540 290 1400 340 1280"/>
+      <path d="M 480 1700 C 440 1540 410 1400 360 1280"/>
+    </g>
+    <g fill="none" stroke="#596275" stroke-width="1.2" opacity="0.8">
+      <rect x="80" y="1440" width="540" height="180" rx="12"/>
+      <line x1="80" y1="1490" x2="620" y2="1490"/>
+      <line x1="80" y1="1540" x2="620" y2="1540"/>
+    </g>
+    <g stroke="#596275" stroke-width="1" opacity="0.6">
+      <line x1="200" y1="1440" x2="200" y2="1620"/>
+      <line x1="350" y1="1440" x2="350" y2="1620"/>
+      <line x1="500" y1="1440" x2="500" y2="1620"/>
+    </g>
+    <use href="#snode" x="200" y="1468"/><text x="200" y="1494" text-anchor="middle" font-size="12" fill="#8B96AE">DOCKER</text>
+    <use href="#snode" x="350" y="1468"/><text x="350" y="1494" text-anchor="middle" font-size="12" fill="#8B96AE">KUBERNETES</text>
+    <use href="#snode" x="500" y="1468"/><text x="500" y="1494" text-anchor="middle" font-size="12" fill="#8B96AE">CELERY</text>
+    <use href="#snode" x="200" y="1520"/><text x="200" y="1546" text-anchor="middle" font-size="12" fill="#8B96AE">GIT</text>
+    <use href="#snode" x="350" y="1520"/><text x="350" y="1546" text-anchor="middle" font-size="12" fill="#8B96AE">GITHUB</text>
+    <use href="#snode" x="500" y="1520"/><text x="500" y="1546" text-anchor="middle" font-size="12" fill="#8B96AE">VERCEL</text>
+    <g font-size="15" fill="#FFFFFF" opacity="0.85">
+      <text x="350" y="1416" text-anchor="middle" letter-spacing="3">INFRASTRUCTURE FRAME</text>
+    </g>
+  </g>
+
+  <!-- HEARTBEAT -->
+  <g>
+    <path d="M 80 1700 L 220 1700 L 245 1680 L 270 1720 L 295 1700 L 350 1700 L 375 1665 L 400 1735 L 425 1700 L 480 1700 L 505 1685 L 530 1715 L 555 1700 L 620 1700"
+      fill="none" stroke="#00E5FF" stroke-width="2.2" filter="url(#glowCyan)"/>
+    <circle r="3.5" fill="#FFFFFF" filter="url(#glowWhite)">
+      <animateMotion dur="4s" repeatCount="indefinite" path="M 80 1700 L 220 1700 L 245 1680 L 270 1720 L 295 1700 L 350 1700 L 375 1665 L 400 1735 L 425 1700 L 480 1700 L 505 1685 L 530 1715 L 555 1700 L 620 1700"/>
+    </circle>
+    <g font-size="14" fill="#FFFFFF" opacity="0.9">
+      <text x="350" y="1774" text-anchor="middle" letter-spacing="3">LIFESIGN // GITHUB ACTIVITY</text>
+    </g>
+  </g>
+
+  <g font-family="Consolas,'Courier New',monospace">
+    <text x="350" y="70" text-anchor="middle" font-size="16" fill="#00E5FF" letter-spacing="4">CHETHAN-01</text>
+    <text x="350" y="92" text-anchor="middle" font-size="11" fill="#8B96AE" letter-spacing="3">FULL-STACK AI ENGINEERING SYSTEM</text>
+  </g>
+</svg>

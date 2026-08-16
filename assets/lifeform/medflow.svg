@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 800" width="1100" height="800" font-family="Consolas,'Courier New',monospace">
+  <defs>
+    <radialGradient id="bgVign" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#08151C"/>
+      <stop offset="55%" stop-color="#04090F"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <linearGradient id="careGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="orchGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="agentGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowViolet" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <symbol id="sagent" viewBox="-14 -15 28 30">
+      <circle cx="0" cy="0" r="22" fill="url(#agentGlow)"/>
+      <polygon points="0,-12 10,-6 10,6 0,12 -10,6 -10,-6" fill="rgba(124,58,237,0.10)" stroke="#7C3AED" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="3" fill="#00E5FF"><animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    </symbol>
+  </defs>
+
+  <rect width="1100" height="800" fill="url(#bgVign)"/>
+  <g stroke="#00E5FF" stroke-width="0.5" fill="none" opacity="0.06">
+    <circle cx="550" cy="420" r="150"/><circle cx="550" cy="420" r="230"/>
+    <circle cx="550" cy="420" r="310"/>
+  </g>
+  <g stroke="#596275" stroke-width="1" opacity="0.35">
+    <path d="M25 25 H60 M25 25 V60"/>
+    <path d="M1075 25 H1040 M1075 25 V60"/>
+  </g>
+
+  <text x="550" y="55" text-anchor="middle" font-size="24" fill="#00E5FF" letter-spacing="5">MEDFLOW AI</text>
+  <text x="550" y="80" text-anchor="middle" font-size="12" fill="#8B96AE" letter-spacing="3">SPECIALIZED ORGAN 03 — HOSPITAL CARE COORDINATION MULTI-AGENT SYSTEM</text>
+
+  <!-- organ body -->
+  <ellipse cx="550" cy="430" rx="460" ry="310" fill="rgba(0,229,255,0.03)" stroke="#00E5FF" stroke-width="1" stroke-dasharray="3 8" opacity="0.5"/>
+
+  <!-- central orchestrator -->
+  <g>
+    <circle cx="550" cy="420" r="70" fill="url(#orchGlow)"/>
+    <circle cx="550" cy="420" r="48" fill="url(#careGrad)" opacity="0.2"/>
+    <circle cx="550" cy="420" r="48" fill="none" stroke="#00E5FF" stroke-width="1.4"/>
+    <circle cx="550" cy="420" r="24" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 550 420" to="360 550 420" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M550 410 L555 420 L550 430 L545 420 Z" fill="#FFFFFF"/>
+    <text x="550" y="472" text-anchor="middle" font-size="12" fill="#00E5FF" letter-spacing="2">CARE ORCHESTRATOR</text>
+  </g>
+
+  <!-- agent spokes -->
+  <g stroke="#7C3AED" stroke-width="1" fill="none" opacity="0.55">
+    <line x1="550" y1="420" x2="190" y2="300"/>
+    <line x1="550" y1="420" x2="290" y2="210"/>
+    <line x1="550" y1="420" x2="500" y2="190"/>
+    <line x1="550" y1="420" x2="760" y2="210"/>
+    <line x1="550" y1="420" x2="880" y2="300"/>
+    <line x1="550" y1="420" x2="900" y2="470"/>
+    <line x1="550" y1="420" x2="840" y2="600"/>
+    <line x1="550" y1="420" x2="600" y2="640"/>
+  </g>
+
+  <!-- agents -->
+  <use href="#sagent" x="190" y="300"/><text x="190" y="278" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">INTAKE</text>
+  <use href="#sagent" x="290" y="210"/><text x="290" y="188" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">HISTORY</text>
+  <use href="#sagent" x="500" y="190"/><text x="500" y="168" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">RISK</text>
+  <use href="#sagent" x="760" y="210"/><text x="760" y="188" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">LAB</text>
+  <use href="#sagent" x="880" y="300"/><text x="880" y="278" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">TREATMENT</text>
+  <use href="#sagent" x="900" y="470"/><text x="900" y="448" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">MEDICATION</text>
+  <use href="#sagent" x="840" y="600"/><text x="840" y="578" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">DISCHARGE</text>
+  <use href="#sagent" x="600" y="640"/><text x="600" y="618" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="1">FOLLOW-UP</text>
+
+  <!-- pulses from agents to orchestrator -->
+  <g>
+    <circle r="2.4" fill="#00E5FF"><animateMotion dur="2.4s" repeatCount="indefinite" path="M190 300 L550 420"/></circle>
+    <circle r="2.4" fill="#00E5FF"><animateMotion dur="2.8s" repeatCount="indefinite" path="M290 210 L550 420"/></circle>
+    <circle r="2.4" fill="#00E5FF"><animateMotion dur="2.6s" repeatCount="indefinite" path="M880 300 L550 420"/></circle>
+    <circle r="2.4" fill="#B026FF"><animateMotion dur="3s" repeatCount="indefinite" path="M900 470 L550 420"/></circle>
+    <circle r="2.4" fill="#B026FF"><animateMotion dur="3.2s" repeatCount="indefinite" path="M840 600 L550 420"/></circle>
+  </g>
+
+  <!-- medical motifs -->
+  <g>
+    <path d="M180 150 L180 90 M150 120 L210 120" stroke="#00E5FF" stroke-width="2.5" filter="url(#glowCyan)"/>
+    <path d="M920 150 L920 90 M890 120 L950 120" stroke="#00E5FF" stroke-width="2.5" filter="url(#glowCyan)"/>
+    <path d="M540 690 C 500 680 500 650 550 660 C 600 670 600 640 560 630" fill="none" stroke="#7C3AED" stroke-width="1.5" opacity="0.8"/>
+  </g>
+
+  <!-- RAG feed -->
+  <g>
+    <path d="M550 490 C 550 530 550 560 550 590" fill="none" stroke="#B026FF" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.6"/>
+    <rect x="520" y="590" width="60" height="24" rx="4" fill="rgba(176,38,255,0.06)" stroke="#B026FF" stroke-width="0.8"/>
+    <text x="550" y="607" text-anchor="middle" font-size="11" fill="#B026FF" letter-spacing="1">RAG</text>
+  </g>
+
+  <!-- tech base -->
+  <g>
+    <rect x="400" y="720" width="300" height="50" rx="8" fill="rgba(0,229,255,0.04)" stroke="#596275" stroke-width="0.8"/>
+    <g font-size="13" fill="#00E5FF" letter-spacing="1">
+      <text x="460" y="734">GEMINI</text><text x="548" y="734">RAG</text><text x="602" y="734">MCP</text>
+      <text x="470" y="760">MULTI-AGENT</text>
+    </g>
+  </g>
+
+  <g font-size="11" fill="#8B96AE" letter-spacing="1">
+    <text x="60" y="780">STATUS: CARE COORDINATION ORGAN</text>
+    <text x="1040" y="780" text-anchor="end">HEALTHTECH / MULTI-AGENT</text>
+  </g>
+</svg>

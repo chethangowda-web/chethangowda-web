@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" font-family="Consolas,'Courier New',monospace">
+  <defs>
+    <radialGradient id="bgVign" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#0A0620"/>
+      <stop offset="50%" stop-color="#050312"/>
+      <stop offset="100%" stop-color="#020308"/>
+    </radialGradient>
+    <linearGradient id="cortexGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#B026FF"/>
+    </linearGradient>
+    <radialGradient id="agentGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B026FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#B026FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="connA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#B026FF"/>
+    </linearGradient>
+
+    <filter id="glowMagenta" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowViolet" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <symbol id="snode" viewBox="-12 -12 24 24">
+      <circle r="11" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.5"/>
+      <circle r="5" fill="#B026FF"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="shex" viewBox="-18 -20 36 40">
+      <circle cx="0" cy="0" r="30" fill="url(#agentGlow)"/>
+      <polygon points="0,-16 13.8,-8 13.8,8 0,16 -13.8,8 -13.8,-8" fill="rgba(176,38,255,0.10)" stroke="#B026FF" stroke-width="1.4"/>
+      <circle cx="0" cy="0" r="3.5" fill="#00E5FF"><animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/></circle>
+    </symbol>
+    <symbol id="ssyn" viewBox="-4 -4 8 8">
+      <circle r="3.5" fill="#B026FF"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
+    </symbol>
+  </defs>
+
+  <rect width="1000" height="620" fill="url(#bgVign)"/>
+  <g stroke="#7C3AED" stroke-width="0.5" fill="none" opacity="0.08">
+    <circle cx="500" cy="300" r="160"/><circle cx="500" cy="300" r="240"/>
+    <circle cx="500" cy="300" r="320"/>
+  </g>
+  <g stroke="#596275" stroke-width="1" opacity="0.35">
+    <path d="M25 25 H60 M25 25 V60"/>
+    <path d="M975 25 H940 M975 25 V60"/>
+  </g>
+
+  <text x="500" y="70" text-anchor="middle" font-size="22" fill="#B026FF" letter-spacing="5">NEURAL CORTEX</text>
+  <text x="500" y="96" text-anchor="middle" font-size="12" fill="#8B96AE" letter-spacing="3">GENERATIVE AI · LLMS · RAG · AI AGENTS · MULTI-AGENT SYSTEMS</text>
+
+  <!-- central cloud -->
+  <ellipse cx="500" cy="310" rx="330" ry="190" fill="url(#cortexGrad)" opacity="0.07"/>
+
+  <!-- outer branches -->
+  <g stroke="#7C3AED" stroke-width="1" fill="none" opacity="0.5">
+    <path d="M500 420 C 500 380 500 340 500 300"/>
+    <path d="M260 200 C 330 260 400 320 500 420"/>
+    <path d="M740 200 C 670 260 600 320 500 420"/>
+    <path d="M150 300 C 250 300 350 300 480 350"/>
+    <path d="M850 300 C 750 300 650 300 520 350"/>
+    <path d="M200 430 C 300 400 400 380 500 420"/>
+    <path d="M800 430 C 700 400 600 380 500 420"/>
+  </g>
+
+  <!-- inner network -->
+  <g stroke="#B026FF" stroke-width="0.9" fill="none" opacity="0.6">
+    <path d="M260 200 L150 300 M150 300 L200 430 M200 430 L300 480"/>
+    <path d="M740 200 L850 300 M850 300 L800 430 M800 430 L700 480"/>
+    <path d="M260 200 L380 240 M380 240 L500 300"/>
+    <path d="M740 200 L620 240 M620 240 L500 300"/>
+    <path d="M150 300 L260 200 M260 200 L380 240"/>
+    <path d="M850 300 L740 200 M740 200 L620 240"/>
+    <path d="M200 430 L300 480 M300 480 L380 420 M380 420 L500 300"/>
+    <path d="M800 430 L700 480 M700 480 L620 420 M620 420 L500 300"/>
+  </g>
+
+  <!-- lateral agent links -->
+  <g stroke="#00E5FF" stroke-width="0.8" fill="none" opacity="0.5">
+    <path d="M380 240 L620 240 M380 240 L500 300 M620 240 L500 300"/>
+    <path d="M380 420 L500 300 M620 420 L500 300"/>
+  </g>
+
+  <!-- pulse travelling down the trunk -->
+  <path d="M500 420 C 500 380 500 340 500 300" fill="none" stroke="url(#connA)" stroke-width="2.5" filter="url(#glowViolet)"/>
+  <circle r="3" fill="#00E5FF" filter="url(#glowCyan)">
+    <animateMotion dur="1.8s" repeatCount="indefinite" path="M500 420 C 500 380 500 340 500 300"/>
+  </circle>
+
+  <!-- synapse points -->
+  <use href="#ssyn" x="380" y="240"/>
+  <use href="#ssyn" x="620" y="240"/>
+  <use href="#ssyn" x="300" y="480"/>
+  <use href="#ssyn" x="700" y="480"/>
+  <use href="#ssyn" x="380" y="420"/>
+  <use href="#ssyn" x="620" y="420"/>
+
+  <!-- peripheral generic nodes -->
+  <use href="#snode" x="150" y="300"/>
+  <use href="#snode" x="850" y="300"/>
+  <use href="#snode" x="200" y="430"/>
+  <use href="#snode" x="800" y="430"/>
+  <use href="#snode" x="300" y="480"/>
+  <use href="#snode" x="700" y="480"/>
+  <use href="#snode" x="380" y="240"/>
+  <use href="#snode" x="620" y="240"/>
+
+  <!-- agent nodes -->
+  <use href="#shex" x="260" y="200"/>
+  <use href="#shex" x="740" y="200"/>
+  <use href="#shex" x="150" y="300"/>
+  <use href="#shex" x="850" y="300"/>
+  <use href="#shex" x="200" y="430"/>
+  <use href="#shex" x="800" y="430"/>
+
+  <g font-size="13" fill="#B026FF" letter-spacing="1">
+    <text x="260" y="178" text-anchor="middle">GEMINI</text>
+    <text x="740" y="178" text-anchor="middle">GROQ</text>
+    <text x="150" y="286" text-anchor="middle">MCP</text>
+    <text x="850" y="286" text-anchor="middle">A2A</text>
+    <text x="200" y="414" text-anchor="middle">ADK</text>
+    <text x="800" y="414" text-anchor="middle">MASTRA</text>
+  </g>
+
+  <!-- labels for node types -->
+  <g font-size="11" fill="#8B96AE" letter-spacing="2">
+    <text x="150" y="330" text-anchor="middle">AGENT NODE</text>
+    <text x="850" y="330" text-anchor="middle">AGENT NODE</text>
+  </g>
+
+  <!-- HUB -->
+  <g>
+    <circle cx="500" cy="300" r="60" fill="url(#hubGlow)"/>
+    <use href="#snode" x="500" y="300"/>
+    <circle cx="500" cy="300" r="22" fill="none" stroke="#B026FF" stroke-width="1" opacity="0.6">
+      <animate attributeName="r" values="18;30;18" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="300" r="3.5" fill="#FFFFFF" filter="url(#glowMagenta)">
+      <animate attributeName="opacity" values="1;0.6;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="500" y="372" text-anchor="middle" font-size="12" fill="#7C3AED" letter-spacing="3">REASONING HUB</text>
+  </g>
+
+  <!-- axon to core -->
+  <path d="M500 420 C 500 470 500 510 500 560" fill="none" stroke="url(#cortexGrad)" stroke-width="3" filter="url(#glowViolet)"/>
+  <path d="M500 560 L495 550 M500 560 L505 550" stroke="#B026FF" stroke-width="1.5" fill="none"/>
+  <circle r="3.5" fill="#B026FF" filter="url(#glowMagenta)">
+    <animateMotion dur="2.2s" repeatCount="indefinite" path="M500 420 C 500 470 500 510 500 560"/>
+  </circle>
+  <text x="520" y="578" font-size="12" fill="#8B96AE" letter-spacing="2">→ ENGINEERING CORE</text>
+
+  <!-- interface labels -->
+  <g font-size="11" fill="#8B96AE" letter-spacing="2">
+    <text x="90" y="520" text-anchor="middle">LLMS</text>
+    <text x="170" y="520" text-anchor="middle">RAG</text>
+    <text x="830" y="520" text-anchor="middle">VECTOR SEARCH</text>
+    <text x="910" y="520" text-anchor="middle">EMBEDDINGS</text>
+  </g>
+  <g stroke="#596275" stroke-width="0.6" opacity="0.4">
+    <line x1="90" y1="508" x2="90" y2="470"/>
+    <line x1="170" y1="508" x2="170" y2="480"/>
+    <line x1="830" y1="508" x2="830" y2="480"/>
+    <line x1="910" y1="508" x2="910" y2="470"/>
+  </g>
+</svg>
