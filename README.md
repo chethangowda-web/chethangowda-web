@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Chethan Gowda — Systems Lab"/>
+<img src="hero.svg" width="100%" alt="Chethan Gowda — Systems Lab"/>
 
 <br/>
 
