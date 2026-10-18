@@ -172,7 +172,7 @@ A full-stack finance application for recording transactions and visualizing spen
 
 ## `02 — ORBIT / SYSTEM MAP`
 
-<img src="assets/orbit-architecture.svg" width="100%" alt="Conceptual ORBIT architecture map"/>
+<img src="orbit-architecture.svg" width="100%" alt="Conceptual ORBIT architecture map"/>
 
 <sub>Conceptual architecture illustration. Refer to the repository's implementation and documentation for the actual current system.</sub>
 
