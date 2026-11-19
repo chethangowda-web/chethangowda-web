@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="t d">
+<title id="t">How I build AI systems</title>
+<desc id="d">An animated pipeline: intent flows through application logic into an orchestrator, fans out to planner, retrieval and tool agents, then passes evaluation before shipping.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07090f"/><stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+  <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#2dd4bf"/><stop offset="1" stop-color="#ffb547"/>
+  </linearGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#30363d"/>
+  </pattern>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+
+  <path id="p1" d="M170 220 H220"/>
+  <path id="p2" d="M360 220 H410"/>
+  <path id="p3a" d="M570 220 C600 220 600 110 635 110"/>
+  <path id="p3b" d="M570 220 H635"/>
+  <path id="p3c" d="M570 220 C600 220 600 330 635 330"/>
+  <path id="p4a" d="M805 110 C830 110 820 220 845 220"/>
+  <path id="p4b" d="M805 220 H845"/>
+  <path id="p4c" d="M805 330 C830 330 820 220 845 220"/>
+  <path id="p5" d="M995 220 H1025"/>
+  <path id="loop" d="M920 250 C920 428 490 428 490 256"/>
+</defs>
+
+<style>
+  .mono{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace}
+  .box{fill:#0d1117;stroke:#30363d;stroke-width:1.5}
+  .h{font-size:14px;font-weight:700;fill:#e6edf3}
+  .s{font-size:11px;fill:#8b949e}
+</style>
+
+<rect width="1200" height="440" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="440" rx="20" fill="url(#dots)" opacity=".7"/>
+<rect x=".5" y=".5" width="1199" height="439" rx="20" fill="none" stroke="#30363d"/>
+
+<text x="40" y="46" class="mono" font-size="13" fill="#6e7681"># how I think about building AI products</text>
+<text x="1160" y="46" text-anchor="end" class="mono" font-size="13" fill="#2dd4bf">● live</text>
+
+<!-- wires -->
+<g fill="none" stroke="url(#wire)" stroke-width="2" opacity=".55">
+  <use href="#p1"/><use href="#p2"/><use href="#p3a"/><use href="#p3b"/><use href="#p3c"/>
+  <use href="#p4a"/><use href="#p4b"/><use href="#p4c"/><use href="#p5"/>
+</g>
+<path d="M920 250 C920 428 490 428 490 256" fill="none" stroke="#f472b6" stroke-width="1.5" stroke-dasharray="5 7" opacity=".7">
+  <animate attributeName="stroke-dashoffset" from="0" to="120" dur="3s" repeatCount="indefinite"/>
+</path>
+<text x="705" y="418" text-anchor="middle" class="mono" font-size="12" fill="#f472b6">↺ feedback loop · measure → refine → re-run</text>
+
+<!-- nodes -->
+<g class="mono">
+  <rect x="30" y="192" width="140" height="56" rx="12" class="box"/>
+  <text x="100" y="216" text-anchor="middle" class="h">INTENT</text>
+  <text x="100" y="234" text-anchor="middle" class="s">user / problem</text>
+
+  <rect x="220" y="192" width="140" height="56" rx="12" class="box"/>
+  <text x="290" y="216" text-anchor="middle" class="h">APP LOGIC</text>
+  <text x="290" y="234" text-anchor="middle" class="s">APIs · auth · state</text>
+
+  <rect x="410" y="186" width="160" height="68" rx="14" fill="#1a1206" stroke="#ffb547" stroke-width="2"/>
+  <rect x="410" y="186" width="160" height="68" rx="14" fill="none" stroke="#ffb547" stroke-width="4" opacity=".5" filter="url(#glow)">
+    <animate attributeName="opacity" values=".15;.7;.15" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="490" y="215" text-anchor="middle" class="h" fill="#ffb547" style="fill:#ffb547">ORCHESTRATOR</text>
+  <text x="490" y="235" text-anchor="middle" class="s">supervisor · routing</text>
+
+  <rect x="635" y="82" width="170" height="56" rx="12" class="box"/>
+  <text x="720" y="106" text-anchor="middle" class="h">PLANNER</text>
+  <text x="720" y="124" text-anchor="middle" class="s">break down tasks</text>
+
+  <rect x="635" y="192" width="170" height="56" rx="12" class="box"/>
+  <text x="720" y="216" text-anchor="middle" class="h">RETRIEVER</text>
+  <text x="720" y="234" text-anchor="middle" class="s">RAG · vector search</text>
+
+  <rect x="635" y="302" width="170" height="56" rx="12" class="box"/>
+  <text x="720" y="326" text-anchor="middle" class="h">EXECUTOR</text>
+  <text x="720" y="344" text-anchor="middle" class="s">tools · MCP · DBs</text>
+
+  <rect x="845" y="192" width="150" height="56" rx="12" fill="#06161a" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="920" y="216" text-anchor="middle" class="h" style="fill:#2dd4bf">EVALUATE</text>
+  <text x="920" y="234" text-anchor="middle" class="s">tests · guardrails</text>
+
+  <rect x="1025" y="192" width="145" height="56" rx="12" fill="#2dd4bf"/>
+  <text x="1097" y="216" text-anchor="middle" class="h" style="fill:#07090f">SHIP 🚀</text>
+  <text x="1097" y="234" text-anchor="middle" class="s" style="fill:#0d3b36">useful output</text>
+</g>
+
+<!-- data pulses -->
+<g filter="url(#glow)">
+  <circle r="5" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0000;0.0010;0.1250;0.1260;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.0000;0.1250;1"><mpath href="#p1"/></animateMotion></circle>
+  <circle r="5" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1250;0.1260;0.2500;0.2510;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.1250;0.2500;1"><mpath href="#p2"/></animateMotion></circle>
+  <circle r="5" fill="#ffb547" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2500;0.2510;0.4750;0.4760;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.2500;0.4750;1"><mpath href="#p3a"/></animateMotion></circle>
+  <circle r="5" fill="#ffb547" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2500;0.2510;0.4750;0.4760;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.2500;0.4750;1"><mpath href="#p3b"/></animateMotion></circle>
+  <circle r="5" fill="#ffb547" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2500;0.2510;0.4750;0.4760;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.2500;0.4750;1"><mpath href="#p3c"/></animateMotion></circle>
+  <circle r="5" fill="#f472b6" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5250;0.5260;0.7250;0.7260;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5250;0.7250;1"><mpath href="#p4a"/></animateMotion></circle>
+  <circle r="5" fill="#f472b6" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5250;0.5260;0.7250;0.7260;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5250;0.7250;1"><mpath href="#p4b"/></animateMotion></circle>
+  <circle r="5" fill="#f472b6" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5250;0.5260;0.7250;0.7260;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.5250;0.7250;1"><mpath href="#p4c"/></animateMotion></circle>
+  <circle r="5" fill="#2dd4bf" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7500;0.7510;0.8750;0.8760;1" dur="4.0s" repeatCount="indefinite"/><animateMotion dur="4.0s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.7500;0.8750;1"><mpath href="#p5"/></animateMotion></circle>
+</g>
+</svg>

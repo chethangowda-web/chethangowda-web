@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
+<title id="t">Current focus — process monitor</title>
+<desc id="d">A top-style process monitor listing what Chethan is currently working on, with animated usage bars.</desc>
+<defs>
+  <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#2dd4bf"/><stop offset=".7" stop-color="#ffb547"/><stop offset="1" stop-color="#ff6b6b"/>
+  </linearGradient>
+</defs>
+<style>
+  .mono{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace}
+  .c{font-size:14px;fill:#c9d1d9}
+  .hd{font-size:12px;font-weight:700;fill:#07090f}
+  .run{fill:#2dd4bf;font-weight:700}
+  .lrn{fill:#ffb547;font-weight:700}
+  .hunt{fill:#f472b6;font-weight:700}
+  .dim{fill:#6e7681}
+</style>
+
+<rect width="1200" height="330" rx="20" fill="#07090f"/>
+<rect x=".5" y=".5" width="1199" height="329" rx="20" fill="none" stroke="#30363d"/>
+
+<g class="mono">
+  <text x="36" y="40" class="c"><tspan fill="#ffb547" font-weight="700">top</tspan> - 2026 · <tspan class="dim">user:</tspan> chethan · <tspan class="dim">uptime:</tspan> since day one · <tspan class="dim">load average:</tspan> 0.97 0.99 1.00</text>
+  <text x="36" y="64" class="c"><tspan class="dim">Tasks:</tspan> 6 total, <tspan class="run">4 running</tspan>, <tspan class="lrn">1 learning</tspan>, <tspan class="hunt">1 seeking</tspan>, 0 sleeping</text>
+
+  <rect x="24" y="82" width="1152" height="26" fill="#2dd4bf"/>
+  <text x="36" y="100" class="hd">PID</text>
+  <text x="110" y="100" class="hd">PROCESS</text>
+  <text x="380" y="100" class="hd">STATE</text>
+  <text x="500" y="100" class="hd">CPU</text>
+  <text x="1010" y="100" class="hd">NOTE</text>
+
+  <!-- rows -->
+  <text x="36" y="138" class="c dim">1001</text><text x="110" y="138" class="c">agent-orchestration</text><text x="380" y="138" class="c run">RUNNING</text>
+  <text x="36" y="172" class="c dim">1002</text><text x="110" y="172" class="c">backend-apis</text><text x="380" y="172" class="c run">RUNNING</text>
+  <text x="36" y="206" class="c dim">1003</text><text x="110" y="206" class="c">dsa-daily-grind</text><text x="380" y="206" class="c run">RUNNING</text>
+  <text x="36" y="240" class="c dim">1004</text><text x="110" y="240" class="c">rag-and-evals</text><text x="380" y="240" class="c run">RUNNING</text>
+  <text x="36" y="274" class="c dim">1005</text><text x="110" y="274" class="c">system-design</text><text x="380" y="274" class="c lrn">LEARNING</text>
+  <text x="36" y="308" class="c dim">1006</text><text x="110" y="308" class="c">internship.search</text><text x="380" y="308" class="c hunt">SEEKING</text>
+
+  <g class="c dim" font-size="12">
+    <text x="1010" y="138">LangGraph · MCP</text>
+    <text x="1010" y="172">FastAPI · Node</text>
+    <text x="1010" y="206">Java · 70-day</text>
+    <text x="1010" y="240">retrieval · QA</text>
+    <text x="1010" y="274">scale · tradeoffs</text>
+    <text x="1010" y="308">SWE / AI intern</text>
+  </g>
+</g>
+
+<!-- bar tracks -->
+<g fill="#161b22">
+  <rect x="500" y="125" width="440" height="16" rx="4"/>
+  <rect x="500" y="159" width="440" height="16" rx="4"/>
+  <rect x="500" y="193" width="440" height="16" rx="4"/>
+  <rect x="500" y="227" width="440" height="16" rx="4"/>
+  <rect x="500" y="261" width="440" height="16" rx="4"/>
+  <rect x="500" y="295" width="440" height="16" rx="4"/>
+</g>
+<!-- animated bars -->
+<g fill="url(#bar)">
+  <rect x="500" y="125" height="16" rx="4" width="400"><animate attributeName="width" values="0;408;380;420;400" keyTimes="0;.2;.5;.8;1" dur="5s" repeatCount="indefinite"/></rect>
+  <rect x="500" y="159" height="16" rx="4" width="360"><animate attributeName="width" values="0;350;380;340;360" keyTimes="0;.2;.5;.8;1" dur="4.4s" repeatCount="indefinite"/></rect>
+  <rect x="500" y="193" height="16" rx="4" width="340"><animate attributeName="width" values="0;330;360;320;340" keyTimes="0;.2;.5;.8;1" dur="6s" repeatCount="indefinite"/></rect>
+  <rect x="500" y="227" height="16" rx="4" width="300"><animate attributeName="width" values="0;290;330;280;300" keyTimes="0;.2;.5;.8;1" dur="5.2s" repeatCount="indefinite"/></rect>
+  <rect x="500" y="261" height="16" rx="4" width="260"><animate attributeName="width" values="0;240;280;250;260" keyTimes="0;.2;.5;.8;1" dur="4.8s" repeatCount="indefinite"/></rect>
+  <rect x="500" y="295" height="16" rx="4" width="440"><animate attributeName="width" values="0;440;430;440;440" keyTimes="0;.2;.5;.8;1" dur="3.6s" repeatCount="indefinite"/></rect>
+</g>
+<g class="mono" font-size="12" fill="#e6edf3">
+  <text x="950" y="138">92%</text><text x="950" y="172">84%</text><text x="950" y="206">80%</text>
+  <text x="950" y="240">71%</text><text x="950" y="274">60%</text><text x="950" y="308" fill="#f472b6">MAX</text>
+</g>
+</svg>
