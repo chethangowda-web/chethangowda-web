@@ -37,15 +37,15 @@ and making every hop reliable.
 
 ### `$ cat now.txt`
 
-🛰️ &nbsp;**Building** multi-agent workflows that do real work
+🛰️ &nbsp;**Building** [Chakravyuh](https://github.com/chethangowda-web/Chakravyuh): red-teaming LLMs in Indian languages
 
-🧠 &nbsp;**Studying** RAG, evaluation & system design
+🧠 &nbsp;**Studying** RAG guardrails, evals & system design
 
 ⚔️ &nbsp;**Grinding** DSA every single day
 
 🏁 &nbsp;**Shipping** at hackathons, then polishing after
 
-💬 &nbsp;**Ask me about** LangGraph, FastAPI, agent design
+💬 &nbsp;**Ask me about** LangGraph, MCP, RAG, LLM security
 
 ⚡ &nbsp;**Fun fact:** 75+ repos and counting
 
@@ -57,14 +57,58 @@ and making every hop reliable.
 
 <img src="assets/pipeline.svg" width="100%" alt="Animated diagram: intent, app logic, orchestrator, planner/retriever/executor agents, evaluation, ship — with a feedback loop"/>
 
-## `$ ps aux --sort=-impact`
+## `$ ps aux --sort=-start_time`
+
+<sub>🟢 = live demo &nbsp;·&nbsp; newest processes first</sub>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-#### 🛰️ [ORBIT](https://github.com/chethangowda-web/ORBIT)
-<sub>`PID 001` · **Orchestrated Resource & Business Intelligence Taskmaster**</sub>
+#### 🌀 [Chakravyuh](https://github.com/chethangowda-web/Chakravyuh) &nbsp;<img src="https://img.shields.io/badge/NEW-ff6b6b?style=flat-square" alt="new"/>
+<sub>`PID 001` · **Indic red-teaming lab for LLM & voice apps**</sub>
+
+Attacks your AI app with native, romanized and code-mixed prompts in English, Hindi, Kannada, Telugu & Tamil, then auto-patches the system prompt and proves the fix on held-out attacks. Ships a runtime shield, a CI gate, a GitHub Action and a browser extension.
+<sub>Built for *Build with Sarvam* · Security & Developer Tools track</sub>
+
+![](https://img.shields.io/badge/Sarvam_AI-07090f?style=flat-square)
+![](https://img.shields.io/badge/FastAPI-07090f?style=flat-square&logo=fastapi&logoColor=2dd4bf)
+![](https://img.shields.io/badge/React_19-07090f?style=flat-square&logo=react)
+![](https://img.shields.io/badge/OWASP_LLM_Top_10-07090f?style=flat-square&logo=owasp)
+
+</td>
+<td width="50%" valign="top">
+
+#### 📑 [CiteWise](https://github.com/chethangowda-web/citewise) &nbsp;[![live](https://img.shields.io/badge/🟢_live-0d3b36?style=flat-square)](https://citewise-oxb5.onrender.com/)
+<sub>`PID 002` · **Secure RAG chatbot with guardrails**</sub>
+
+Answers policy questions only when it can cite a document, and refuses otherwise. Hybrid pgvector + full-text retrieval with RRF, two-layer prompt-injection screening, PII redaction, an audit ledger, and a 44-question eval gate in CI.
+
+![](https://img.shields.io/badge/FastAPI-07090f?style=flat-square&logo=fastapi&logoColor=2dd4bf)
+![](https://img.shields.io/badge/pgvector-07090f?style=flat-square&logo=postgresql)
+![](https://img.shields.io/badge/Gemini_/_Groq-07090f?style=flat-square&logo=googlegemini)
+![](https://img.shields.io/badge/Docker-07090f?style=flat-square&logo=docker)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🤖 [OmniPlus](https://github.com/chethangowda-web/OmniPlus)
+<sub>`PID 003` · **MCP-powered local AI assistant**</sub>
+
+A CLI and web dashboard that connects LLMs to your files, live web search and GitHub through the Model Context Protocol. Uses a LangGraph ReAct agent with multi-turn memory, SSE streaming and Groq ↔ Gemini failover.
+
+![](https://img.shields.io/badge/MCP-07090f?style=flat-square)
+![](https://img.shields.io/badge/LangGraph-07090f?style=flat-square&logo=langchain&logoColor=2dd4bf)
+![](https://img.shields.io/badge/Groq-07090f?style=flat-square)
+![](https://img.shields.io/badge/Python-07090f?style=flat-square&logo=python)
+
+</td>
+<td width="50%" valign="top">
+
+#### 🛰️ [ORBIT](https://github.com/chethangowda-web/ORBIT) &nbsp;[![live](https://img.shields.io/badge/🟢_live-0d3b36?style=flat-square)](https://orbit-lyart-tau-78.vercel.app)
+<sub>`PID 004` · **Orchestrated Resource & Business Intelligence Taskmaster**</sub>
 
 Natural-language task workflows driven by a supervisor that routes work to specialized agents, with a web dashboard and backend API.
 
@@ -74,25 +118,25 @@ Natural-language task workflows driven by a supervisor that routes work to speci
 ![](https://img.shields.io/badge/Redis-07090f?style=flat-square&logo=redis&logoColor=ff6b6b)
 
 </td>
-<td width="50%" valign="top">
-
-#### 🚨 [SentinelFlow AI](https://github.com/chethangowda-web/SentinalFlowAI-Hackathon)
-<sub>`PID 002` · **Autonomous Incident Response & Post-Mortem Agent**</sub>
-
-Multi-step agent reasoning that analyzes incidents and writes structured post-mortems.
-🏆 *Round 2 — HiDevs × Mastra AI Agent Builder Hackathon*
-
-![](https://img.shields.io/badge/TypeScript-07090f?style=flat-square&logo=typescript)
-![](https://img.shields.io/badge/Mastra-07090f?style=flat-square&logoColor=ffb547)
-![](https://img.shields.io/badge/Groq-07090f?style=flat-square)
-
-</td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### 🩺 [MedAssist AI](https://github.com/chethangowda-web/MedAssist-AI)
-<sub>`PID 003` · **Multi-agent healthcare copilot**</sub>
+#### 🛡️ [SentinelRAG](https://github.com/chethangowda-web/SentinalRAG)
+<sub>`PID 005` · **Self-correcting retrieval-augmented generation**</sub>
+
+A 10-node LangGraph pipeline that scores confidence after every retrieval, rewrites weak queries, flags contradictions, and asks for clarification instead of hallucinating. Uses hybrid Qdrant + BM25 search with cross-encoder reranking.
+
+![](https://img.shields.io/badge/LangGraph-07090f?style=flat-square&logo=langchain&logoColor=2dd4bf)
+![](https://img.shields.io/badge/Qdrant-07090f?style=flat-square)
+![](https://img.shields.io/badge/Gemini-07090f?style=flat-square&logo=googlegemini)
+![](https://img.shields.io/badge/Next.js-07090f?style=flat-square&logo=nextdotjs)
+
+</td>
+<td width="50%" valign="top">
+
+#### 🩺 [MedAssist AI](https://github.com/chethangowda-web/MedAssist-AI) &nbsp;[![live](https://img.shields.io/badge/🟢_live-0d3b36?style=flat-square)](https://med-assist-ai-chi.vercel.app)
+<sub>`PID 006` · **Multi-agent healthcare copilot**</sub>
 
 AI assistance for rural health workers, ASHA workers and primary-care providers.
 🏆 *Grand Finale — AI Agent Builder Series 2026, Bengaluru*
@@ -101,42 +145,32 @@ AI assistance for rural health workers, ASHA workers and primary-care providers.
 ![](https://img.shields.io/badge/Multi--Agent-07090f?style=flat-square)
 
 </td>
-<td width="50%" valign="top">
-
-#### ⚖️ [SARA](https://github.com/chethangowda-web/SARA)
-<sub>`PID 004` · **Smart Accountability & Resolution Assistant**</sub>
-
-AI-assisted grievance workflows: tracking, escalation, prioritization and resolution visibility.
-
-![](https://img.shields.io/badge/FastAPI-07090f?style=flat-square&logo=fastapi&logoColor=2dd4bf)
-![](https://img.shields.io/badge/PostgreSQL-07090f?style=flat-square&logo=postgresql)
-![](https://img.shields.io/badge/Celery-07090f?style=flat-square&logo=celery&logoColor=a5d63f)
-![](https://img.shields.io/badge/React-07090f?style=flat-square&logo=react)
-
-</td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### 🏥 [MedFlow AI](https://github.com/chethangowda-web/MedFlow-AI)
-<sub>`PID 005` · **Hospital care-coordination agents**</sub>
+#### 🌾 [SwasthAI](https://github.com/chethangowda-web/SwasthAI)
+<sub>`PID 007` · **Workforce intelligence for rural health**</sub>
 
-Specialized agents for intake, history, risk assessment, treatment planning and follow-up.
+Five AI agents handle attendance verification (GPS geofencing + selfie spoof checks), supervisor reports, smart scheduling, staffing-shortage prediction, and a health assistant in English, Hindi and Kannada.
 
-![](https://img.shields.io/badge/Gemini-07090f?style=flat-square&logo=googlegemini)
-![](https://img.shields.io/badge/MCP-07090f?style=flat-square)
-![](https://img.shields.io/badge/Medical_RAG-07090f?style=flat-square)
+![](https://img.shields.io/badge/FastAPI-07090f?style=flat-square&logo=fastapi&logoColor=2dd4bf)
+![](https://img.shields.io/badge/LangGraph-07090f?style=flat-square&logo=langchain&logoColor=2dd4bf)
+![](https://img.shields.io/badge/Next.js_16-07090f?style=flat-square&logo=nextdotjs)
+![](https://img.shields.io/badge/PostgreSQL-07090f?style=flat-square&logo=postgresql)
 
 </td>
 <td width="50%" valign="top">
 
-#### 🔗 [TruthChain](https://github.com/chethangowda-web/TruthChain)
-<sub>`PID 006` · **Deepfake & misinformation detection**</sub>
+#### 🚨 [SentinelFlow AI](https://github.com/chethangowda-web/SentinalFlowAI-Hackathon) &nbsp;[![live](https://img.shields.io/badge/🟢_live-0d3b36?style=flat-square)](https://sentinal-flow-ai-hackathon-murex.vercel.app)
+<sub>`PID 008` · **Autonomous incident response & post-mortem agent**</sub>
 
-AI-powered detection of manipulated media, combined with blockchain-backed verification.
+Multi-step agent reasoning that analyzes incidents and writes structured post-mortems.
+🏆 *Round 2 — HiDevs × Mastra AI Agent Builder Hackathon*
 
-![](https://img.shields.io/badge/AI-07090f?style=flat-square)
-![](https://img.shields.io/badge/Blockchain-07090f?style=flat-square)
+![](https://img.shields.io/badge/TypeScript-07090f?style=flat-square&logo=typescript)
+![](https://img.shields.io/badge/Mastra-07090f?style=flat-square)
+![](https://img.shields.io/badge/Groq-07090f?style=flat-square)
 
 </td>
 </tr>
@@ -148,14 +182,18 @@ AI-powered detection of manipulated media, combined with blockchain-backed verif
 
 | PID | Project | What it does |
 |:---:|---|---|
-| 007 | [Silent Guardian](https://github.com/chethangowda-web/Silent-Guardian) | AI-powered personal safety intelligence system |
-| 008 | [NeuroGuard](https://github.com/chethangowda-web/NeuroGuard) | Server-failure prediction using digital-twin intelligence |
-| 009 | [CareAI](https://github.com/chethangowda-web/CareAI) | Software-based cognitive health monitoring |
-| 010 | [SpendWise](https://github.com/chethangowda-web/SpendWise) | Expense tracking with spending reports & charts |
-| 011 | [DSA Mentor](https://github.com/chethangowda-web/Frontend-Project-DSA-Mentor) | AI-powered DSA learning platform — understand, don't memorize |
-| 012 | [70-Day DSA Sheet](https://github.com/chethangowda-web/Chethan-s-DSA-Sheet) | A focused interview-prep path through DSA |
-| 013 | [Concurrent Task Manager](https://github.com/chethangowda-web/Concurrent-Task-Manager) | Java multithreading, OOP & collections in a real system |
-| 014 | [30 Days Frontend](https://github.com/chethangowda-web/30-Days-Frontend) | 30 days, 30 different frontend builds |
+| 009 | [TrafficMind AI](https://github.com/chethangowda-web/TrafficMindAI) | Night-traffic control room: a coordinator agent routing to analysis, route, incident & insight agents |
+| 010 | [SARA](https://github.com/chethangowda-web/SARA) | AI-assisted grievance tracking, escalation & resolution workflows |
+| 011 | [MedFlow AI](https://github.com/chethangowda-web/MedFlow-AI) | Hospital care-coordination agents: intake → risk → treatment → follow-up |
+| 012 | [AI Engineer Roadmap](https://github.com/chethangowda-web/AI-engineer-roadmap) · [🟢 live](https://ai-engineer-roadmap-wine.vercel.app) | Progress tracker for a complete AI engineering roadmap |
+| 013 | [SpendWise](https://github.com/chethangowda-web/SpendWise) · [🟢 live](https://spendwise-f6f3f.web.app/) | Expense tracking with spending reports & charts |
+| 014 | [TruthChain](https://github.com/chethangowda-web/TruthChain) | Deepfake & misinformation detection with blockchain verification |
+| 015 | [Silent Guardian](https://github.com/chethangowda-web/Silent-Guardian) | AI-powered personal safety intelligence system |
+| 016 | [NeuroGuard](https://github.com/chethangowda-web/NeuroGuard) | Server-failure prediction using digital-twin intelligence |
+| 017 | [CareAI](https://github.com/chethangowda-web/CareAI) | Software-based cognitive health monitoring |
+| 018 | [DSA Mentor](https://github.com/chethangowda-web/Frontend-Project-DSA-Mentor) | AI-powered DSA learning platform: understand, don't memorize |
+| 019 | [70-Day DSA Sheet](https://github.com/chethangowda-web/Chethan-s-DSA-Sheet) | A focused interview-prep path through DSA |
+| 020 | [Concurrent Task Manager](https://github.com/chethangowda-web/Concurrent-Task-Manager) | Java multithreading, OOP & collections in a real system |
 
 </details>
 
